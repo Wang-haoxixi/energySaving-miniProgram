@@ -91,7 +91,6 @@ const getPhoneNumber = (userInfo) => {
 			}
 		)
 		.then(res => {
-			console.log(res)
 			if (res.data.code == 0) {
 				login();
 			} else {
@@ -163,6 +162,7 @@ const login = () => {
 			}
 		)
 		.then(res => {
+			console.log('Login..', res)
 			if (res.data.code == 0) {
 				uni.setStorageSync('userinfo', res.data);
 				uni.setStorageSync('token', 'Bearer ' + res.data.access_token);
@@ -197,7 +197,6 @@ const getCode = () => {
 	try {
 		code = uni.getStorageSync('code')
 	} catch (e) {}
-	console.log('code..', code)
 	return code
 }
 

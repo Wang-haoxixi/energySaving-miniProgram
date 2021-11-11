@@ -30,12 +30,12 @@
 		methods: {
 			agreement() {
 				uni.navigateTo({
-					url: '../webView/webView?type=agreement'
+					url: '../webView/webView?type=agreementEnergySaving'
 				})
 			},
 			privacy() {
 				uni.navigateTo({
-					url: '../webView/webView?type=privacy'
+					url: '../webView/webView?type=privacyEnergySaving'
 				})
 			},
 			decryptPhoneNumber(e) {

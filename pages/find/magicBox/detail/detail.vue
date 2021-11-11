@@ -75,7 +75,7 @@
 					</scroll-view>
 				</view>
 				<view class="detail_label flexRowStart" v-if="data.tagKeywords && data.tagKeywords.length>0">
-					<view v-for="(item,index) of data.tagKeywords" :key="index" class="detail_label_item">
+					<view v-for="(item,index) of data.tagKeywords" :key="index" class="detail_label_item singleEllipsis">
 						{{$isEmpty(item)?'':item}}
 					</view>
 				</view>
@@ -760,6 +760,7 @@
 			padding: 0 32rpx;
 			margin-top: 24rpx;
 			.detail_label_item{
+				max-width: 176rpx;
 				padding: 6rpx 12rpx;
 				border-radius: 4rpx;
 				background-color: #F5F7F8;

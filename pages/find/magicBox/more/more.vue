@@ -58,7 +58,7 @@
 									</view>
 								</view>
 								<view class="item-content-tag flexRowStart" style="width: 100%;">
-									<view class="item-content-tag-item color_919397" v-for="(item2,index2) of item.tagKeywords" :key="index2" v-if="index2<3"> {{$isEmpty(item2)?'':item2}}</view>
+									<view class="item-content-tag-item singleEllipsis color_919397" v-for="(item2,index2) of item.tagKeywords" :key="index2" v-if="index2<3"> {{$isEmpty(item2)?'':item2}}</view>
 								</view>
 								<view class="item-content-score color_F74437 flexRow" style="width: 100%; margin-top: 16rpx;font-size: 24rpx;line-height: 34rpx;">
 									<view class="" v-if="item.isFree==1" style="font-weight: 600;">
@@ -467,6 +467,7 @@
 					font-size: 22rpx;
 					line-height: 32rpx;
 					.item-content-tag-item{
+						max-width: 110rpx;
 						background-color:#F5F7F8 ;
 						border-radius: 4rpx;
 						padding: 6rpx 12rpx;
