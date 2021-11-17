@@ -169,11 +169,13 @@
 
 				.abilityTagListContent {
 					margin-bottom: 10rpx;
-					margin-right: 20rpx;
+					// margin-right: 20rpx;
+					margin-right: 8rpx;
 					display: inline-block;
 					padding: 4rpx 10rpx;
 					background-color: #F4F5F6;
-					border-radius: 10rpx;
+					// border-radius: 10rpx;
+					border-radius: 4rpx;
 					font-size: 20rpx;
 					line-height: 28rpx;
 				}

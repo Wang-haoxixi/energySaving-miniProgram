@@ -16,10 +16,10 @@
 		</view>
 
 		<view class="color_919397 remind">
-			登录代表您已同意我能
-			<text class="color_F74437" @tap="agreement">《用户协议》</text>
+			登录代表您已同意节能保
+			<text class="color_2F80FF" @tap="agreement">《用户协议》</text>
 			和
-			<text class="color_F74437" @tap="privacy">《隐私政策》</text>
+			<text class="color_2F80FF" @tap="privacy">《隐私政策》</text>
 		</view>
 	</view>
 </template>
@@ -164,7 +164,7 @@
 
 		.remind {
 			align-self: flex-start;
-			margin-top: 40rpx;
+			margin-top: 36rpx;
 			font-size: 24rpx;
 			line-height: 34rpx;
 		}
@@ -184,6 +184,7 @@
 	}
 
 	.button-list {
+		margin-top: 60rpx;
 		display: flex;
 		justify-content: space-between;
 		width: 100%;

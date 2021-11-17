@@ -86,7 +86,8 @@
 		data() {
 			return {
 				valueSync: "",
-				background:"-webkit-linear-gradient(343deg, #47B48D 0%, #4FC9B3 100%);",
+				// background:"-webkit-linear-gradient(343deg, #47B48D 0%, #4FC9B3 100%);",
+				background:"-webkit-linear-gradient(95deg, #47B48D 0%, #4FC9B3 100%)",
 				webkit_background_clip:"text",
 				webkit_text_fill_color:"transparent"
 			};
