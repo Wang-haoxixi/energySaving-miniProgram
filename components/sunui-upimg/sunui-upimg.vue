@@ -34,7 +34,8 @@
 			// 服务器url
 			url: {
 				type: String,
-				default: 'https://www.modulestore.cn/api/admin/file/app/sftp/upload',
+				default: 'https://admin.jienengbao.top/api/admin/file/app/sftp/upload',
+				// default: 'https://www.modulestore.cn/api/admin/file/app/sftp/upload',
 				// default: 'http://www.modulestore.cn:64082/api/admin/file/app/sftp/upload'
 			},
 			// 上传样式宽高

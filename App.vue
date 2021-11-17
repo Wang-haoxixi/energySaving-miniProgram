@@ -58,6 +58,26 @@
 	image{
 		vertical-align: bottom;
 	}
+	// 节能保主体视觉色
+	.color_main_4fc975 {
+		color: #4fc975 !important;
+	}
+	
+	// 节能保按钮背景色-可点击
+	.bgColor_clickable {
+		background-color: #46B28B !important;
+	}
+	
+	// 节能保按钮背景色-不可点击
+	.bgColor_unclickable {
+		background-color: #C7E8DC !important;
+	}
+	
+	// 节能保按钮背景色-透明
+	.bgColor_lucency {
+		background-color: #ECEEF0 !important;
+	}
+	
 	.color_516B8D {
 		color: #516B8D !important;
 	}
@@ -194,7 +214,8 @@
 		line-height: 92rpx;
 		text-align: center;
 		color: #ffffff;
-		background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		background-color: #46B28B;
 	}
 
 	.button:active {
@@ -293,8 +314,10 @@
 	}
 
 	checkbox .wx-checkbox-input.wx-checkbox-input-checked {
-		border: 2rpx solid #FF6034;
-		background: #FF6034;
+		// border: 2rpx solid #FF6034;
+		border: 2rpx solid #46B28B;
+		// background: #FF6034;
+		background-color: #46B28B;
 	}
 
 	checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {

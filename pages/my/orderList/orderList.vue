@@ -118,7 +118,7 @@
 								</view>
 							</view>
 						</view>
-						<image class="emptyImg" v-if="!activityListAll.length>0 &&oss" :src="oss+'pic_noOrderList.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!activityListAll.length>0 &&oss" :src="oss+'pic_energy_default_wudingdan.png'" mode="aspectFit"></image>
 						<uni-load-more :status="activityMoreStatusAll" v-if="activityListAll.length>0"></uni-load-more>
 					</scroll-view>
 				</swiper-item>
@@ -215,7 +215,7 @@
 								</view>
 							</view>
 						</view>
-						<image class="emptyImg" v-if="!activityListIng.length>0 && oss" :src="oss+'pic_noOrderList.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!activityListIng.length>0 && oss" :src="oss+'pic_energy_default_wudingdan.png'" mode="aspectFit"></image>
 						<uni-load-more :status="activityMoreStatusIng" v-if="activityListIng.length>0"></uni-load-more>
 					</scroll-view>
 				</swiper-item>
@@ -309,7 +309,7 @@
 									继续付款
 								</view> -->
 						</view>
-						<image class="emptyImg" v-if="!activityListEnd.length>0 && oss" :src="oss+'pic_noOrderList.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!activityListEnd.length>0 && oss" :src="oss+'pic_energy_default_wudingdan.png'" mode="aspectFit"></image>
 						<uni-load-more :status="activityMoreStatusEnd" v-if="activityListEnd.length>0"></uni-load-more>
 					</scroll-view>
 				</swiper-item>
@@ -398,7 +398,7 @@
 								<view class="order-type-text">活动订单</view>
 							</view>
 						</view>
-						<image class="emptyImg" v-if="!activityListRefund.length>0 && oss" :src="oss+'pic_noOrderList.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!activityListRefund.length>0 && oss" :src="oss+'pic_energy_default_wudingdan.png'" mode="aspectFit"></image>
 						<uni-load-more :status="activityMoreStatusRefund" v-if="activityListRefund.length>0"></uni-load-more>
 					</scroll-view>
 				</swiper-item>
@@ -487,7 +487,7 @@
 								<view class="order-type-text">活动订单</view>
 							</view>
 						</view>
-						<image class="emptyImg" v-if="!activityListApply.length>0 && oss" :src="oss+'pic_noOrderList.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!activityListApply.length>0 && oss" :src="oss+'pic_energy_default_wudingdan.png'" mode="aspectFit"></image>
 						<uni-load-more :status="activityMoreStatusApply" v-if="activityListApply.length>0"></uni-load-more>
 					</scroll-view>
 				</swiper-item>
@@ -996,7 +996,8 @@
 					width: 20rpx;
 					height: 6rpx;
 					border-radius: 10rpx;
-					background: linear-gradient(180deg, #FF825C 0%, #FF3636 100%);
+					// background: linear-gradient(180deg, #FF825C 0%, #FF3636 100%);
+					background-color: #46B28B;
 					margin: 10rpx auto;
 				}
 			}

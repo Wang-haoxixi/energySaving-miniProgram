@@ -16,7 +16,7 @@
 					{{$isEmpty(item)?'':item}}
 				</view>
 			</view>
-			<image class="emptyImg" v-else-if="oss" :src="oss+'pic_search.png'" mode="aspectFit"></image>
+			<image class="emptyImg" v-else-if="oss" :src="oss+'pic_energy_default_wujilu.png'" mode="aspectFit"></image>
 		</view>
 		<view class="" v-else>
 			<view class="examList" v-for="(item,index) of examList.records" :key="index" @tap="goDetails(item)">

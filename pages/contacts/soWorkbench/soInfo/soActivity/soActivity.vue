@@ -65,7 +65,7 @@
 								</view>
 							</view>
 						</view>
-						<image class="emptyImg" v-if="!activity.records.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!activity.records.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 						<uni-load-more :status="activityStatus" v-if="activity.records.length>0"></uni-load-more>
 					</scroll-view>
 					<view class="bottom-safe" style="height: 112rpx;"></view>
@@ -112,7 +112,7 @@
 								</view>
 							</view>
 						</view>
-						<image class="emptyImg" v-if="!processing.records.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!processing.records.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 						<uni-load-more :status="processingStatus" v-if="processing.records.length>0"></uni-load-more>
 					</scroll-view>
 					<view class="bottom-safe" style="height: 112rpx;"></view>
@@ -159,7 +159,7 @@
 								</view>
 							</view>
 						</view>
-						<image class="emptyImg" v-if="!completed.records.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!completed.records.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 						<uni-load-more :status="completedStatus" v-if="completed.records.length>0"></uni-load-more>
 					</scroll-view>
 					<view class="bottom-safe" style="height: 112rpx;"></view>
@@ -363,7 +363,8 @@
 					width: 12rpx;
 					height: 6rpx;
 					border-radius: 3rpx;
-					background-color: #F74437;
+					// background-color: #F74437;
+					background-color: #46B28B;
 					margin: 10rpx auto;
 				}
 			}
@@ -453,7 +454,8 @@
 	}
 
 	.active {
-		color: #f74437;
+		// color: #f74437;
+		color: #46B28B;
 		font-size: 36rpx;
 		font-weight: bold;
 		line-height: 50rpx;

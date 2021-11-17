@@ -82,10 +82,10 @@
 			<view style="flex: 1;">
 
 			</view>
-			<button v-if="data.remainingTime>0" class="button" @tap="wxPay" style="width: 204rpx;">
+			<button v-if="data.remainingTime>0" class="button bgColor_clickable" @tap="wxPay" style="width: 204rpx;">
 				立即支付
 			</button>
-			<button v-else class="button cancelBtn" :disabled="data.remainingTime<1" style="width: 204rpx;">
+			<button v-else  class="button cancelBtn bgColor_unclickable" :disabled="data.remainingTime<1" style="width: 204rpx;">
 				立即支付
 			</button>
 		</bottom-button>
@@ -104,7 +104,7 @@
 					<view class="button noRepeat" @tap="cancel">
 						取消
 					</view>
-					<view class="button repeatNow" @tap="pass">
+					<view class="button bgColor_clickable repeatNow" @tap="pass">
 						确定
 					</view>
 				</view>
@@ -322,7 +322,7 @@
 
 <style lang="scss">
 	.cancelBtn{
-		background: #FFD6D6 !important;
+		// background: #FFD6D6 !important;
 		color: #FFFFFF !important;
 	}
 	.popDialog {

@@ -68,7 +68,7 @@
 				
 			</view>
 		</view>
-		<image class="emptyImg" v-if=" oss && (orgCount.length==0 && userCount.length==0 || !searchText.length>0) && searchText!='' " :src="oss + 'pic_search.png'"
+		<image class="emptyImg" v-if=" oss && (orgCount.length==0 && userCount.length==0 || !searchText.length>0) && searchText!='' " :src="oss + 'pic_energy_default_wujilu.png'"
 		 mode="aspectFit"></image>
 	</view>
 </template>

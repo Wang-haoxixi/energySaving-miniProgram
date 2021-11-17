@@ -92,7 +92,7 @@
 						<view v-if="item.haveRead==0" class="readMark">
 						</view>
 					</view>
-					<image class="emptyImg" v-if="!underwayList.records.length>0 &&oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+					<image class="emptyImg" v-if="!underwayList.records.length>0 &&oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 					<uni-load-more :status="underwayStatus" v-if="underwayList.records.length>0"></uni-load-more>
 				</scroll-view>
 			</swiper-item>
@@ -139,7 +139,7 @@
 						<view v-if="item.haveRead==0" class="readMark">
 						</view>
 					</view>
-					<image class="emptyImg" v-if="!overList.records.length>0 &&oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+					<image class="emptyImg" v-if="!overList.records.length>0 &&oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 					<uni-load-more :status="overStatus" v-if="overList.records.length>0"></uni-load-more>
 				</scroll-view>
 			</swiper-item>
@@ -186,7 +186,7 @@
 						<view v-if="item.haveRead==0" class="readMark">
 						</view>
 					</view>
-					<image class="emptyImg" v-if="!finishedList.records.length>0 &&oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+					<image class="emptyImg" v-if="!finishedList.records.length>0 &&oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 					<uni-load-more :status="finishedStatus" v-if="finishedList.records.length>0"></uni-load-more>
 				</scroll-view>
 			</swiper-item>
@@ -233,7 +233,7 @@
 						<view v-if="item.haveRead==0" class="readMark">
 						</view>
 					</view>
-					<image class="emptyImg" v-if="!closedList.records.length>0 &&oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+					<image class="emptyImg" v-if="!closedList.records.length>0 &&oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 					<uni-load-more :status="closedStatus" v-if="closedList.records.length>0"></uni-load-more>
 				</scroll-view>
 			</swiper-item>

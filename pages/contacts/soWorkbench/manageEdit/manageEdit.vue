@@ -10,7 +10,7 @@
 				</view>
 			</view>
 			<view style="margin-right: -16rpx;">
-				<switch color="#F74437" :checked="soInfo.org.allowJoin==true" @change="switchChangeJoin" style="transform:scale(0.7)" />
+				<switch color="#46B28B" :checked="soInfo.org.allowJoin==true" @change="switchChangeJoin" style="transform:scale(0.7)" />
 			</view>
 		</view>
 		<view class="" style="padding: 40rpx;">
@@ -24,7 +24,7 @@
 					</view>
 				</view>
 				<view style="margin-right: -16rpx;">
-					<switch color="#F74437" :checked="soInfo.org.isExempt==true" @change="switchChangeExempt" style="transform:scale(0.7)" />
+					<switch color="#46B28B" :checked="soInfo.org.isExempt==true" @change="switchChangeExempt" style="transform:scale(0.7)" />
 				</view>
 			</view>
 			<view class="contentBorder" style="padding-bottom: 24rpx;margin-top: 44rpx;">

@@ -9,7 +9,7 @@
 			<view class="questionnaire">
 				<questionnaireItem v-for="(item,index) in qusetionnaireList" :key="index" :itemData="item" :isLogin="isLogin"></questionnaireItem>
 			</view>
-			<image class="emptyImg" v-if="!qusetionnaireList.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+			<image class="emptyImg" v-if="!qusetionnaireList.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 			<uni-load-more :status="questionnaireStatus" v-if="qusetionnaireList.length>0"></uni-load-more>
 			<view class="safe-bottom"></view>
 		</view>

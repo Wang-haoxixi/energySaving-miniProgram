@@ -27,7 +27,7 @@
 						</view>
 					</view>
 				</view>
-				<image class="emptyImg" v-if="!soInfo.records.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+				<image class="emptyImg" v-if="!soInfo.records.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 				<uni-load-more :status="soStatus" v-if="soInfo.records.length>0"></uni-load-more>
 				<view class="bottom-safe"></view>
 			</scroll-view>
@@ -131,7 +131,8 @@
 				border-radius: 42rpx;
 				color: #FFFFFF;
 				text-align: center;
-				background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+				// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+				background-color: #46B28B;
 			}
 		}
 	}

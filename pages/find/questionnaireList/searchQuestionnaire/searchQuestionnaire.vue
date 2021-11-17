@@ -46,7 +46,7 @@
 				</view>
 			</view>
 		</view>
-		<image class="emptyImg" v-if="!qusetionnaireList.length>0 && oss" :src="oss+'pic_search.png'" mode="aspectFit"></image>
+		<image class="emptyImg" v-if="!qusetionnaireList.length>0 && oss" :src="oss+'pic_energy_default_wujilu.png'" mode="aspectFit"></image>
 		<uni-load-more :status="questionnaireStatus" v-if="qusetionnaireList.length>0"></uni-load-more>
 		<view class="bottom-safe" style="height: 112rpx;"></view>
 	</view>

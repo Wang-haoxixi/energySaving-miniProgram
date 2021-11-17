@@ -10,8 +10,8 @@
 					<view class="flexRow" style="align-items: flex-start;">
 						<view class="titleName">{{index+1}}、{{$isEmpty(item.name)?'':item.name}}</view>
 						<view class="content">
-							<radio :value="item.name" color="#FF6034" :disabled="status" v-if="isLogin==false && status==true"/>
-							<radio :value="item.name" color="#FF6034" :checked="item.isSelected == 1 && status == true" :disabled="status==true" v-else/>
+							<radio :value="item.name" color="#46B28B" :disabled="status" v-if="isLogin==false && status==true"/>
+							<radio :value="item.name" color="#46B28B" :checked="item.isSelected == 1 && status == true" :disabled="status==true" v-else/>
 						</view>
 					</view>
 					<view class="" style="text-align: center;">

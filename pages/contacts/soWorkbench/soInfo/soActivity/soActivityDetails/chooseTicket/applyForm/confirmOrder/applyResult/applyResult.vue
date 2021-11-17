@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view class="status">
-			<image v-if="oss" class="successImg" :src="oss+'ican_questionnaireResult_success.png'" mode="aspectFit"></image>
+			<image v-if="oss" class="successImg" :src="oss+'pic_energy_activity_purchasesucceeded.png'" mode="aspectFit"></image>
 		</view>
 		<view class="orgName color_303031 bold" v-if="resultInfo.ticketingType==2 && !this.$isEmpty(resultInfo.money)">
 			您已支付{{resultInfo.money}}<text v-if="resultInfo.paymentMethod==2">元</text><text v-if="resultInfo.paymentMethod==1">贝</text>
@@ -85,8 +85,10 @@
 		.checkInfo{
 			background:#FFFFFF;
 			width: 316rpx;
-			color: #F74437;
-			border: 2rpx solid #F74437;
+			// color: #F74437;
+			color: #46B28B;
+			// border: 2rpx solid #F74437;
+			border: 2rpx solid #46B28B;
 			margin-right: 30rpx;
 		}
 		.goSo{

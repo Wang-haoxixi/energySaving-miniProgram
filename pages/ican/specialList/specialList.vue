@@ -43,7 +43,7 @@
 				</view>
 			</view>
 		</view>
-		<image class="emptyImg" v-if="!celebrityInfo.records.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+		<image class="emptyImg" v-if="!celebrityInfo.records.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 		<uni-load-more :status="celebrityStatus" v-if="celebrityInfo.records.length>0"></uni-load-more>
 		<!-- <view class="bottom-safe" style="height: 112rpx;"></view> -->
 	</view>
@@ -206,7 +206,8 @@
 		text-align: center;
 		height: 52rpx;
 		font-size: 26rpx;
-		background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		background-color: #46B28B;
 	}
 	
 	.attentioned {
@@ -214,7 +215,8 @@
 		color: #FFFFFF;
 		width: 140rpx;
 		font-size: 26rpx;
-		background-color: #FFD6D6;
+		// background-color: #FFD6D6;
+		background-color: #C7E8DC;
 		border-radius: 42rpx;
 		text-align: center;
 		height: 52rpx;

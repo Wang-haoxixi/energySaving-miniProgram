@@ -111,18 +111,18 @@
 						<view class="talk-end-text">{{ $isEmpty(item.commentNum)?'0':item.commentNum}}</view>
 					</view>
 					<view class="center" @tap.stop="addThumbsUp(item)">
-						<image v-if="oss && item.praiseStatus == 1" class="talk-icon" :src="oss+'thought_praise.png'"></image>
-						<image v-if="oss && item.praiseStatus == 0" class="talk-icon" :src="oss+'thought_unPraise.png'"></image>
+						<image v-if="oss && item.praiseStatus == 1" class="talk-icon" :src="oss+'icon_energy_attention_dianzan_selected.png'"></image>
+						<image v-if="oss && item.praiseStatus == 0" class="talk-icon" :src="oss+'icon_energy_attention_dianzan.png'"></image>
 						<view class="talk-end-text">{{ $isEmpty(item.thumbsUpCount)?0:item.thumbsUpCount}}</view>
 					</view>
 				</view>
 			</view>
 		</view>
 		<view class="" v-if="!thoughts.length>0">
-			<image class="emptyImg" v-if="oss" :src="oss+'pic_noThoughts.png'" mode="aspectFit"></image>
+			<image class="emptyImg" v-if="oss" :src="oss+'pic_energy_default_dongtai.png'" mode="aspectFit"></image>
 		</view>
 		<view class="addBtn" @tap.stop="addThought()">
-			<image v-if="oss" :src="oss+'icon_find_attention_add.png'"></image>
+			<image v-if="oss" :src="oss+'icon_energy_hall_fabu_green.png'"></image>
 		</view>
 		<uni-popup ref="dialog" type="bottom">
 			<view class="popDialog">
@@ -317,12 +317,12 @@
 <style lang="scss" scoped>
 	.addBtn {
 		position: fixed;
-		bottom: 10rpx;
-		right: 6rpx;
+		bottom: 40rpx;
+		right: 15rpx;
 
 		image {
-			height: 152rpx;
-			width: 152rpx;
+			height: 136rpx;
+			width: 136rpx;
 		}
 	}
 

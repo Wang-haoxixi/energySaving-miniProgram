@@ -29,7 +29,7 @@
 					</view>
 				</view>
 				<!-- <view class="" v-if="!commentList.length>0">
-					<image v-if="oss" :src="oss+'pic_noMessage.png'" mode="aspectFit" style="width: 100%;"></image>
+					<image v-if="oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit" style="width: 100%;"></image>
 				</view> -->
 				<uni-load-more :status="commentStatus" v-if="commentList.length>0"></uni-load-more>
 				<view class="bottom-safe" style="height: 112rpx;"></view>

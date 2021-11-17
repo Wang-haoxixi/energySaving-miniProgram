@@ -111,7 +111,7 @@
 			<swiper-item item-id="1">
 				<view id="partner">
 					<recruit-item v-for="(item,index) in partner.records" :key="index" :itemData="item"></recruit-item>
-					<image v-if="!partner.records.length > 0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit" style="width: 100%;"></image>
+					<image v-if="!partner.records.length > 0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit" style="width: 100%;"></image>
 					<uni-load-more :status="partnerStatus" v-if="partner.records.length > 0 "></uni-load-more>
 				</view>
 			</swiper-item>

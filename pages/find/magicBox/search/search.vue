@@ -67,7 +67,7 @@
 					</view>
 				</view>
 			</view>
-			<image class="emptyImg" v-if="!data.records.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+			<image class="emptyImg" v-if="!data.records.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 			<uni-load-more :status="status" v-if="data.records.length>0"></uni-load-more>
 		</scroll-view>
 	</view>
@@ -376,7 +376,8 @@
 		}
 
 		.right {
-			color: #F74437;
+			// color: #F74437;
+			color: #46B28B;
 			font-size: 24rpx;
 			line-height: 34rpx;
 		}

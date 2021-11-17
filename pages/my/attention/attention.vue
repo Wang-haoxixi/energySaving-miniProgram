@@ -19,7 +19,7 @@
 					<view class="color_303031" style="font-size: 28rpx; flex: 1;margin-left: 24rpx;">{{ item.name }}</view>
 					<!-- <image :src="oss + 'icon_right_gray.png'" style="width: 44rpx; height: 44rpx;"></image> -->
 				</view>
-				<image class="emptyImg" v-if="!soList.records.length > 0&& oss " :src="oss+'pic_noAttention.png'" mode="aspectFit"></image>
+				<image class="emptyImg" v-if="!soList.records.length > 0&& oss " :src="oss+'pic_energy_default_wuguanzhu.png'" mode="aspectFit"></image>
 				<uni-load-more :status="soStatus" v-if="soList.records.length > 0"></uni-load-more>
 			</scroll-view>
 		</swiper-item>
@@ -33,7 +33,7 @@
 							<view class="company">{{ getCompanyStation(item.company, item.position.split('-')[(item.position.split('-').length - 1)]) }}</view>
 						</view>
 					</view>
-					<image class="emptyImg" v-if="!cannerList.records.length > 0 && oss" :src="oss+'pic_noAttention.png'" mode="aspectFit"></image>
+					<image class="emptyImg" v-if="!cannerList.records.length > 0 && oss" :src="oss+'pic_energy_default_wuguanzhu.png'" mode="aspectFit"></image>
 					<uni-load-more :status="cannerStatus" v-if="cannerList.records.length > 0"></uni-load-more>
 				</scroll-view>
 			</swiper-item>
@@ -290,7 +290,8 @@
 				width: 20rpx;
 				height: 6rpx;
 				border-radius: 10rpx;
-				background: linear-gradient(180deg, #FF825C 0%, #FF3636 100%);
+				// background: linear-gradient(180deg, #FF825C 0%, #FF3636 100%);
+				background-color: #46B28B;
 				margin-bottom: 6rpx;
 			}
 		}

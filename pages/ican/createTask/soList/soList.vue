@@ -7,11 +7,11 @@
 			</view>
 			<view class="content">
 				<uni-indexed-list :options="showList" :scrollTop="160" />
-				<image class="emptyImg" v-if="!showList.length>0 && oss" :src="oss+'pic_noSo.png'" mode="aspectFit"></image>
+				<image class="emptyImg" v-if="!showList.length>0 && oss" :src="oss+'pic_energy_default_wuso.png'" mode="aspectFit"></image>
 			</view>
 		</view>
 		<view class="addImg" @tap="addThoughts">
-			<image class="img" v-if="oss" :src="oss+'icon_find_attention_add.png'"></image>
+			<image class="img" v-if="oss" :src="oss+'icon_energy_hall_fabu_green.png'"></image>
 		</view>
 	</view>
 </template>
@@ -119,8 +119,8 @@
 		right: 6rpx;
 	
 		.img {
-			height: 152rpx;
-			width: 152rpx;
+			height: 136rpx;
+			width: 136rpx;
 		}
 	}
 	.container {

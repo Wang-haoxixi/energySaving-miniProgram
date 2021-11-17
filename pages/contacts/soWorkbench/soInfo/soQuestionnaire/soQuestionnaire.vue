@@ -367,7 +367,8 @@
 					width: 12rpx;
 					height: 6rpx;
 					border-radius: 3rpx;
-					background-color: #F74437;
+					// background-color: #F74437;
+					background-color: #46B28B;
 					margin: 10rpx auto;
 				}
 			}
@@ -399,7 +400,8 @@
 	}
 
 	.active {
-		color: #f74437;
+		// color: #f74437;
+		color: #46B28B;
 		font-size: 36rpx;
 		font-weight: bold;
 		line-height: 50rpx;

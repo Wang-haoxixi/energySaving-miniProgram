@@ -6,7 +6,7 @@
 					<view :class="status?'active':'unactive'" @tap="checkSoMaterial" style="margin-bottom: 10rpx;">
 						组织材料
 					</view>
-					<view class="" v-if="status" style="width: 12rpx;height: 6rpx;background-color: #F74437;border-radius: 4rpx;">
+					<view class="" v-if="status" style="width: 12rpx;height: 6rpx;background-color: #46B28B;border-radius: 4rpx;">
 
 					</view>
 				</view>
@@ -14,7 +14,7 @@
 					<view :class="status?'unactive':'active'" @tap="checkCollectMaterial" style="margin-bottom: 10rpx;">
 						收藏
 					</view>
-					<view class="" v-if="!status" style="width: 12rpx;height: 6rpx;background-color: #F74437;border-radius: 4rpx;">
+					<view class="" v-if="!status" style="width: 12rpx;height: 6rpx;background-color: #46B28B;border-radius: 4rpx;">
 
 					</view>
 				</view>
@@ -53,7 +53,7 @@
 							</view>
 						</view>
 						<view class="flexColumn emptyImg" style="justify-content: center;" v-if="!kindList.length>0">
-							<image class="" v-if="oss" :src="oss+'pic_materialNoMessage.png'" mode="aspectFit" style="width: 160rpx;height: 146rpx;"></image>
+							<!-- <image class="" v-if="oss" :src="oss+'pic_materialNoMessage.png'" mode="aspectFit" style="width: 160rpx;height: 146rpx;"></image> -->
 							<view v-if="!showAllStatus" class="color_666769" style="font-size: 28rpx;line-height: 48rpx;margin-top: 44rpx;">
 								暂无材料，请点击左上角子文件分类查看更多
 							</view>
@@ -89,7 +89,7 @@
 								</view>
 							</view>
 						</view>
-						<image class="emptyImg" v-if="!collectList.records.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!collectList.records.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 						<uni-load-more :status="collectStatus" v-if="collectList.records.length>0"></uni-load-more>
 					</view>
 				</scroll-view>
@@ -352,7 +352,8 @@
 	}
 
 	.active {
-		color: #F74437;
+		// color: #F74437;
+		color: #46B28B;
 		font-size: 36rpx;
 		line-height: 50rpx;
 		font-weight: bold;

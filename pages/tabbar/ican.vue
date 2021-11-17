@@ -13,25 +13,25 @@
 			<banner slotNumber="energy_mini_home_banner" :customStyle="{width:'702rpx',margin:'0 24rpx'}"></banner>
 			<view class="function_centry flexRowStart">
 				<view class="function_centry_item flexColumn" @tap="goServiceCenter">
-					<image :src="$ossUrl('home_function_store.png')" mode="" class="img"></image>
+					<image :src="$ossUrl('icon_energy_home_yingyongzujian.png')" mode="" class="img"></image>
 					<view class="function_centry_item_title">
 						应用组件
 					</view>
 				</view>
 				<view class="function_centry_item flexColumn" @tap="goFunction('specialList')">
-					<image :src="$ossUrl('home_function_specialist.png')" mode="" class="img"></image>
+					<image :src="$ossUrl('icon_energy_home_zhuanjia.png')" mode="" class="img"></image>
 					<view class="function_centry_item_title">
 						行业大咖
 					</view>
 				</view>
 				<view class="function_centry_item flexColumn" @tap="goActivityCenter">
-					<image :src="$ossUrl('home_function_activity.png')" mode="" class="img"></image>
+					<image :src="$ossUrl('icon_energy_home_huodong.png')" mode="" class="img"></image>
 					<view class="function_centry_item_title">
 						活动中心
 					</view>
 				</view>
 				<view class="function_centry_item flexColumn" @tap="goFunction('publishService')">
-					<image :src="$ossUrl('home_publish.png')" mode="" class="img"></image>
+					<image :src="$ossUrl('icon_energy_home_jishifabu.png')" mode="" class="img"></image>
 					<view class="function_centry_item_title">
 						立即发布
 					</view>

@@ -164,7 +164,7 @@
 			<view class="comment" id="C">
 				<view class="comment_title flexRow">
 					<view>评价</view>
-					<!-- <view class="color_2F80FF center" @tap="goComment">发布评论<image v-if="oss" class="edit-img" :src="oss+'icon_edit_blue.png'"></image>
+					<!-- <view class="color_2F80FF center" @tap="goComment">发布评论<image v-if="oss" class="edit-img" :src="oss+'icon_energy_fabiaopl.png'"></image>
 					</view> -->
 					<view class="comment_title_more flexRowStart" v-if="comment.records.length>3" @tap="checkCommentMore">
 						<view class="">
@@ -185,13 +185,13 @@
 							<uni-rate margin="2" size="16" disabled="true" :value="data.score"></uni-rate>
 						</view>
 					</view>
-					<!-- <view class="color_2F80FF center" @tap="goComment">发布评论<image v-if="oss" class="edit-img" :src="oss+'icon_edit_blue.png'"></image>
+					<!-- <view class="color_2F80FF center" @tap="goComment">发布评论<image v-if="oss" class="edit-img" :src="oss+'icon_energy_fabiaopl.png'"></image>
 					</view> -->
 					<view class="comment_all_publish flexRowStart" @tap="goComment">
 						<view class="">
 							发表评论
 						</view>
-						<image v-if="oss" class="edit-img" :src="oss+'icon_edit_blue.png'" style="width: 32rpx;height: 32rpx;margin-left: 8rpx;"></image>
+						<image v-if="oss" class="edit-img" :src="oss+'icon_energy_fabiaopl.png'" style="width: 32rpx;height: 32rpx;margin-left: 8rpx;"></image>
 					</view>
 				</view>
 				<view class="" v-if="comment.records && comment.records.length>0">
@@ -1061,7 +1061,8 @@
 		line-height: 92rpx;
 		font-size: 30rpx;
 		text-align: center;
-		background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		background: #46B28B;
 		border-radius: 64rpx;
 		color: #FFFFFF;
 	}

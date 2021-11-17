@@ -8,11 +8,12 @@
 					</view>
 				</view>
 				<view class="countInfo">
-					<view class="color_919397 flexRowStart createTime" style="align-items: flex-start;">
-						<view class="" v-if="materialDetails.isOriginal==1">
-							<view class="color_2F80FF mark">
+					<view class="color_919397 flexRowStart createTime">
+						<view class="" v-if="materialDetails.isOriginal==1" style="display: flex;align-items: center;">
+							<!-- <view class="mark">
 								原创
-							</view>
+							</view> -->
+							<image :src="$ossUrl('icon_energy_articledetails_zhiding.png')" mode="" class="mark"></image>
 						</view>
 						<view style="margin-right: 10rpx;">作者:</view>
 						<view class="color_516B8D" style="margin-right: 10rpx;flex: 1;">{{$isEmpty(materialDetails.createUser)?'':materialDetails.createUser}}</view>
@@ -36,11 +37,11 @@
 						</view>
 					</view>
 				</view>
-				<view class="flexRowStart tagInfo" v-if="!isEmpty(materialDetails.tag)" style="flex-wrap: wrap;">
+				<!-- <view class="flexRowStart tagInfo" v-if="!isEmpty(materialDetails.tag)" style="flex-wrap: wrap;">
 					<view v-for="(item,index) of materialDetails.tag" :key="index" class="color_F74437 tags">
 						<view class="eachTag">{{$isEmpty(item)?'':item}}</view>
 					</view>
-				</view>
+				</view> -->
 				<view class="" v-if="(materialDetails.isPay!=0 ||materialDetails.isSoPay!=0) && (materialDetails.attachMultiFileList &&materialDetails.attachMultiFileList.length>0)">
 					<view class="attachFileList" v-for="(item,index) of materialDetails.attachMultiFileList" :key="index">
 						<view class="flexRowStart" style="width: 100%;">
@@ -151,7 +152,7 @@
 							</view>
 						</view>
 					</view>
-					<view class="button" style="flex: 1;" @tap="materialComment">
+					<view class="button bgColor_clickable" style="flex: 1;" @tap="materialComment">
 						去评论
 					</view>
 				</view>
@@ -179,7 +180,7 @@
 			</uni-popup>
 		</view>
 		<view class="" v-else>
-			<image class="emptyImg" v-if="oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+			<image class="emptyImg" v-if="oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 		</view>
 	</view>
 </template>
@@ -518,11 +519,15 @@
 	}
 
 	.mark {
-		border: 2rpx solid #2F80FF;
-		padding: 0rpx 12rpx;
-		font-size: 22rpx;
-		border-radius: 10rpx;
-		margin-right: 20rpx;
+		// border: 2rpx solid #4fc975;
+		// color: #4fc975;
+		// padding: 0rpx 12rpx;
+		// font-size: 22rpx;
+		// border-radius: 10rpx;
+		margin-right: 16rpx;
+		// line-height: 48rpx;
+		width: 64rpx;
+		height: 32rpx;
 	}
 
 	.viewsInfo {

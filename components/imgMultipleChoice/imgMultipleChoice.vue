@@ -12,8 +12,8 @@
 					<view class="flexRow" style="align-items: flex-start;">
 						<view class="titleName">{{index+1}}、{{$isEmpty(item.name)?'':item.name}}</view>
 						<view class="content">
-							<checkbox color="#FF6034" :value="item.name" :disabled="status" v-if="isLogin==false && status==true"/>
-							<checkbox color="#FF6034" :value="item.name" :disabled="item.checked || status==true" :checked="item.isSelected==1 && status==true" v-else/>
+							<checkbox color="#46B28B" :value="item.name" :disabled="status" v-if="isLogin==false && status==true"/>
+							<checkbox color="#46B28B" :value="item.name" :disabled="item.checked || status==true" :checked="item.isSelected==1 && status==true" v-else/>
 						</view>
 					</view>
 					<view class="" style="text-align: center;">

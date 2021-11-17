@@ -93,7 +93,9 @@
 			width: 172rpx;
 			background: #FFFFFF;
 			color: #F73737;
-			border: 2rpx solid #F73737;
+			color: #46B28B;
+			// border: 2rpx solid #F73737;
+			border: 2rpx solid #46B28B;
 			margin-right: 30rpx;
 		}
 		.send {

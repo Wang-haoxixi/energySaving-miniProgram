@@ -3,10 +3,10 @@
 		<view class="container">
 			<view class="" style="padding:0rpx 24rpx;">
 				<view class="flexRowStart content">
-					<view class="color_FFFFFF topTagList" @tap="deleteTag(item,index)" v-for="(item,index) of tagList" :key="index" style="background-color: #2F80FF;">
+					<view class="color_FFFFFF topTagList" @tap="deleteTag(item,index)" v-for="(item,index) of tagList" :key="index" style="background-color: #46B28B;">
 						{{$isEmpty(item)?'':item}}<text style="margin-left: 10rpx;">X</text>
 					</view>
-					<input v-if="tagList.length<5" @confirm="pushTag" type="text" v-model="addTxt" maxlength="6" style="text-align: center;height: 46rpx;min-height:46rpx; width: 140rpx;border: 1px solid #2F80FF;border-radius: 10rpx;margin: 0rpx 10rpx;margin-bottom: 30rpx;font-size: 20rpx;line-height: 46rpx;"/>
+					<input v-if="tagList.length<5" placeholder="输入我的标签" placeholder-style="color:#BABEC0;font-size: 28rpx;" @confirm="pushTag" type="text" v-model="addTxt" maxlength="6" style="text-align: center;height: 46rpx;min-height:46rpx; width: 170rpx;border-radius: 10rpx;margin: 0rpx 10rpx;margin-bottom: 30rpx;font-size: 20rpx;line-height: 46rpx;"/>
 				</view>
 				<view class="color_BABEC0 titleInfo">
 					每个标签不超过6个字
@@ -15,7 +15,7 @@
 			<view class="" style="padding:0rpx 32rpx;">
 				<view class="flexRow" style="margin-bottom: 40rpx;margin-left: 10rpx;">
 					<view class="">
-						为你推荐
+						为您推荐
 					</view>
 				</view>
 				<view class="flexRowStart" style="flex-wrap: wrap;">
@@ -169,7 +169,8 @@
 		color: #919397;
 	}
 	.selectBg{
-		background-color: #2F80FF;
+		// background-color: #2F80FF;
+		background-color: #46B28B;
 		color: #FFFFFF;
 	}
 	.container{

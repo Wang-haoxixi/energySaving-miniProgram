@@ -499,9 +499,9 @@
 					line-height: 92rpx;
 					font-size: 30rpx;
 					text-align: center;
-					background: #f5f7f8;
+					background: #C7E8DC;
 					border-radius: 64rpx;
-					color: #9AA1A7;
+					color: #FFFFFF;
 				}
 
 				.sellBtn {
@@ -512,7 +512,8 @@
 					line-height: 92rpx;
 					font-size: 30rpx;
 					text-align: center;
-					background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+					// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+					background: #46B28B;
 					border-radius: 64rpx;
 					color: #FFFFFF;
 				}

@@ -117,7 +117,7 @@
 						设为置顶
 					</view>
 					<view style="margin-right: -16rpx;">
-						<switch color="#F74437" :checked="org.isTop==1" @change="switchChange" style="transform:scale(0.7)" />
+						<switch color="#46B28B" :checked="org.isTop==1" @change="switchChange" style="transform:scale(0.7)" />
 					</view>
 				</view>
 			</view>

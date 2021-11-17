@@ -9,13 +9,13 @@
 		<scroll-view scroll-y="true" :style="{height:`${swiperHeight}px`}" v-if="type==2">
 			<view class="">
 				<uni-indexed-list :options="showFriendList" :transfer="true" :role="role" :senderId="senderId"/>
-				<image class="emptyImg" v-if="!showFriendList.length>0 && oss" :src="oss+'pic_noFriend.png'" mode="aspectFit"></image>
+				<image class="emptyImg" v-if="!showFriendList.length>0 && oss" :src="oss+'pic_energy_default_wuhaoyou.png'" mode="aspectFit"></image>
 			</view>
 		</scroll-view>
 		<scroll-view scroll-y="true" :style="{height:`${swiperHeight}px`}"  v-if="type==1">
 			<view>
 				<uni-indexed-list :options="showList" :transfer="true" :role="role" :senderId="senderId"/>
-				<image class="emptyImg" v-if="!showList.length>0 && oss" :src="oss+'pic_noSo.png'" mode="aspectFit"></image>
+				<image class="emptyImg" v-if="!showList.length>0 && oss" :src="oss+'pic_energy_default_wuso.png'" mode="aspectFit"></image>
 			</view>
 		</scroll-view>
 	</view>

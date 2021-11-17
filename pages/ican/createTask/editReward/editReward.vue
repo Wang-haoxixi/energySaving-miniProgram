@@ -7,7 +7,7 @@
 						<view class="color_303031 bold">
 							不设置奖励
 						</view>
-						<radio :checked="checkStatus==1" :disabled="changeStatus" />
+						<radio :checked="checkStatus==1" :disabled="changeStatus" color="#46B28B" />
 					</label>
 					<view class="color_919397 message">
 						该任务不需要分配奖励
@@ -23,7 +23,7 @@
 								?
 							</view>
 						</view>
-						<radio :checked="checkStatus==2" :disabled="changeStatus" />
+						<radio :checked="checkStatus==2" :disabled="changeStatus" color="#46B28B" />
 					</label>
 					<view class="color_919397 message">
 						自定义奖励金额，我的奖励我做主
@@ -39,7 +39,7 @@
 								?
 							</view>
 						</view>
-						<radio :checked="checkStatus==3" :disabled="changeStatus" />
+						<radio :checked="checkStatus==3" :disabled="changeStatus" color="#46B28B" />
 					</label>
 					<view class="color_919397 message">
 						平均奖励给所有完成任务的成员

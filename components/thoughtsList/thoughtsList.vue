@@ -106,14 +106,14 @@
 						<view class="talk-end-text color_666769">{{ $isEmpty(item.commentNum)?'0':item.commentNum}}</view>
 					</view>
 					<view class="center" @tap.stop="addThumbsUp(item)">
-						<image v-if="oss && item.praiseStatus == 1" class="talk-icon" :src="oss+'thought_praise.png'"></image>
-						<image v-else-if="oss" class="talk-icon" :src="oss+'thought_unPraise.png'"></image>
+						<image v-if="oss && item.praiseStatus == 1" class="talk-icon" :src="oss+'icon_energy_attention_dianzan_selected.png'"></image>
+						<image v-else-if="oss" class="talk-icon" :src="oss+'icon_energy_attention_dianzan.png'"></image>
 						<view class="talk-end-text color_666769">{{ $isEmpty(item.thumbsUpCount)?0:item.thumbsUpCount}}</view>
 					</view>
 				</view>
 			</view>
 		</view>
-		<image v-if="!talk.records.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit" style="width: 100%;"></image>
+		<image v-if="!talk.records.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit" style="width: 100%;"></image>
 		<uni-load-more :status="moreStatus" v-if="talk.records.length>0"></uni-load-more>
 		<view class="bottom-safe" style=""></view>
 	</view>

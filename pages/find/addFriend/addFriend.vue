@@ -18,7 +18,7 @@
 				</view>
 			</view>
 		</view>
-		<image class="emptyImg" v-if=" oss && !userCount.length>0 && searchText!=''" :src="oss + 'pic_noMessage.png'"
+		<image class="emptyImg" v-if=" oss && !userCount.length>0 && searchText!=''" :src="oss + 'pic_energy_default_wuxinxi.png'"
 		 mode="aspectFit"></image>
 	</view>
 </template>

@@ -11,8 +11,8 @@
 						<view class="flexRow" style="align-items: flex-start;word-break: break-all;">
 							<view>{{index+1}}、{{$isEmpty(item.name)?'':item.name}}</view>
 							<view>
-								<radio :value="item.name" color="#FF6034" :disabled="status" v-if="isLogin==false&&status==true"/>
-								<radio :value="item.name" color="#FF6034" :disabled="status" :checked="status==true&&item.isSelected==1" v-else />
+								<radio :value="item.name" color="#46B28B" :disabled="status" v-if="isLogin==false&&status==true"/>
+								<radio :value="item.name" color="#46B28B" :disabled="status" :checked="status==true&&item.isSelected==1" v-else />
 							</view>
 						</view>
 					</label>

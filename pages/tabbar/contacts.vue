@@ -132,13 +132,13 @@
 	.icon_line {
 		width: 4rpx;
 		height: 28rpx;
-		background: linear-gradient(180deg, #FF825C 0%, #FF3636 100%);
+		background: #46B28B;
 		border-radius: 6px;
 	}
 
 	.active {
 		background-color: #FFFFFF;
-		color: #F73737 !important;
+		color: #46B28B !important;
 	}
 
 	.scroll_item {

@@ -247,7 +247,7 @@
 	}
 
 	.top {
-		background-image: url('https://woneng-oss.oss-cn-hangzhou.aliyuncs.com/wxapp/bg_my.png');
+		background-image: url('https://woneng-oss.oss-cn-hangzhou.aliyuncs.com/wxapp/EnergySaving/pic_energy_my_bg.png');
 		width: 750rpx;
 		height: 480rpx;
 		background-size: 100% 100%;

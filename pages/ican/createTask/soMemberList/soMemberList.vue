@@ -27,7 +27,7 @@
 				<checkbox-group name="" @change="selectAll">
 					<label class="flexRow selectAll">
 						<view class="flexRowStart" style="">
-							<text class="color_F74437 txt">全选</text>
+							<text class="txt">全选</text>
 							<checkbox color="#FF6034" :checked="selectAllChecked" />
 						</view>
 					</label>
@@ -51,7 +51,7 @@
 					<checkbox class="selected" :value="item.userId" color="#FF6034" :checked="item.checked" />
 				</label>
 			</checkbox-group>
-			<image class="emptyImg" v-if="!soList.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+			<image class="emptyImg" v-if="!soList.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 			<view class="bottom-safe" style="height: 112rpx;"></view>
 		</view>
 		<view class="btn">
@@ -265,6 +265,7 @@
 						font-size: 28rpx;
 						line-height: 40rpx;
 						margin-right: 20rpx;
+						color: #46B28B;
 					}
 
 					checkbox {

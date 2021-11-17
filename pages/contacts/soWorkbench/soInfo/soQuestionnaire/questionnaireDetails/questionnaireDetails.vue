@@ -537,11 +537,13 @@
 
 	::v-deep .btn {
 		flex: 1;
-		color: #F74437;
+		// color: #F74437;
+		color: #46B28B;
 		font-size: 28rpx;
 		background: #FFFFFF;
 		border-radius: 64rpx;
-		border: 2rpx solid #F74437;
+		// border: 2rpx solid #F74437;
+		border: 2rpx solid #46B28B;
 		font-weight: bold;
 		margin-bottom: 60rpx
 	}

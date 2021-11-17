@@ -1098,7 +1098,8 @@
 			.send{
 				width:686rpx;
 				height: 92rpx;
-				background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+				// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+				background-color: #46B28B;
 				margin: 24rpx 32rpx 32rpx;
 				font-weight: bold;
 				font-size: 30rpx;

@@ -2,34 +2,35 @@ Component({
 	data: {
 		selected: -1,
 		color: "#272727",
-		selectedColor: "#F73737",
+		// selectedColor: "#F73737",
+		selectedColor: "#46B28B",
 		list: [{
 				"pagePath": "/pages/tabbar/ican",
-				"iconPath": "/static/image/ic_main_main_normal.png",
-				"selectedIconPath": "/static/image/ic_main_main_focus.png",
+				"iconPath": "/static/image/icon_energy_tabbar_home.png",
+				"selectedIconPath": "/static/image/icon_energy_tabbar_home_selected.png",
 				"text": "首页"
 			}, {
 				"pagePath": "/pages/tabbar/contacts",
-				"iconPath": "/static/image/icon_main_find_normal.png",
-				"selectedIconPath": "/static/image/icon_main_find_focus.png",
+				"iconPath": "/static/image/icon_energy_tabbar_serve.png",
+				"selectedIconPath": "/static/image/icon_energy_tabbar_serve_selected.png",
 				"text": "服务"
 			},
 			{
 				"pagePath": "/pages/tabbar/square",
-				"iconPath": "/static/image/ic_main_square_normal.png",
-				"selectedIconPath": "/static/image/ic_main_square_focus.png",
+				"iconPath": "/static/image/icon_energy_tabbar_hall.png",
+				"selectedIconPath": "/static/image/icon_energy_tabbar_hall_selected.png",
 				"text": "需求大厅"
 			},
 			{
 				"pagePath": "/pages/tabbar/find",
-				"iconPath": "/static/image/ic_main_so_normal.png",
-				"selectedIconPath": "/static/image/ic_main_so_focus.png",
+				"iconPath": "/static/image/icon_energy_tabbar_circle.png",
+				"selectedIconPath": "/static/image/icon_energy_tabbar_circle_selected.png",
 				"text": "圈子"
 			},
 			{
 				"pagePath": "/pages/tabbar/my",
-				"iconPath": "/static/image/ic_main_mine_normal.png",
-				"selectedIconPath": "/static/image/ic_main_mine_focus.png",
+				"iconPath": "/static/image/icon_energy_tabbar_my.png",
+				"selectedIconPath": "/static/image/icon_energy_tabbar_my_selected.png",
 				"text": "我的"
 			}
 		]

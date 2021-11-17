@@ -663,7 +663,8 @@
 		line-height: 92rpx;
 		color: #FFFFFF;
 		text-align: center;
-		background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		background-color: #46B28B;
 		border-radius: 64rpx;
 	}
 	.card_title{
@@ -1004,9 +1005,12 @@
 
 					.share {
 						width: 140rpx;
-						background-color: #F4F5F6;
+						color: #46B28B;
+						// background-color: #F4F5F6;
+						background-color: #FFFFFF;
 						border-radius: 42rpx;
 						text-align: center;
+						border: 2rpx solid #46B28B;
 						// padding: 8rpx 0;
 						height: 52rpx;
 						font-size: 26rpx;
@@ -1020,7 +1024,8 @@
 						border-radius: 42rpx;
 						text-align: center;
 						height: 52rpx;
-						background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+						// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+						background-color: #46B28B;
 						font-size: 26rpx;
 						line-height: 52rpx;
 					}
@@ -1029,7 +1034,8 @@
 						margin-left: 20rpx;
 						color: #FFFFFF;
 						width: 140rpx;
-						background-color: #FFD6D6;
+						// background-color: #FFD6D6;
+						background-color: #C7E8DC;
 						border-radius: 42rpx;
 						text-align: center;
 						height: 52rpx;

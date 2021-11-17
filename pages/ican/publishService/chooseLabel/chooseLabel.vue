@@ -72,8 +72,10 @@
 
 <style lang="scss">
 	.checked{
-		color: #f73737 !important;
-		background: rgba(247, 55, 55, .1) !important;
+		// color: #f73737 !important;
+		color: #FFFFFF !important;
+		// background: rgba(247, 55, 55, .1) !important;
+		background: #46B28B !important;
 	}
 	.container{
 		padding: 32rpx;

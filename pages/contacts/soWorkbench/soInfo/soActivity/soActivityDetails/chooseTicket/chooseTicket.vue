@@ -14,10 +14,10 @@
 						</view>
 						<view class="flexRowStart count">
 							<view>阅读:</view>
-							<view class="color_2F80FF num">{{$isEmpty(activityInfo.browseNum)?'':activityInfo.browseNum}}</view>
+							<view class="num" style="color: #46B28B;">{{$isEmpty(activityInfo.browseNum)?'':activityInfo.browseNum}}</view>
 							<view class="line">|</view>
 							<view>限额:</view>
-							<view class="color_2F80FF num">{{$isEmpty(activityInfo.ticketNum)?'':activityInfo.ticketNum}}</view>
+							<view class="num" style="color: #46B28B;">{{$isEmpty(activityInfo.ticketNum)?'':activityInfo.ticketNum}}</view>
 						</view>
 					</view>
 					<view class="color_919397 flexRowStart fieldInfo">
@@ -43,7 +43,7 @@
 								</view>
 								<view>
 									<radio class="select" id="radio" :value="item.ticketingName"
-									 color="#FF6034" :checked="item.checkStatus" />
+									 color="#46B28B" :checked="item.checkStatus" />
 								</view>
 							</view>
 						</label>

@@ -107,11 +107,11 @@
 							<view class="talk-end-text">{{$isEmpty(thoughts.commentNum)?'0':thoughts.commentNum}}</view>
 						</view>
 						<view v-if="thoughts.praiseStatus == 1" class="center" @tap.stop="addThumbsUp(thoughts)">
-							<image v-if="oss" class="talk-icon" :src="oss+'thought_praise.png'"></image>
+							<image v-if="oss" class="talk-icon" :src="oss+'icon_energy_attention_dianzan_selected.png'"></image>
 							<view class="talk-end-text">{{$isEmpty(thoughts.thumbsUpCount)?'0':thoughts.thumbsUpCount}}</view>
 						</view>
 						<view v-if="thoughts.praiseStatus == 0" class="center" @tap.stop="addThumbsUp(thoughts)">
-							<image v-if="oss" class="talk-icon" :src="oss+'thought_unPraise.png'"></image>
+							<image v-if="oss" class="talk-icon" :src="oss+'icon_energy_attention_dianzan.png'"></image>
 							<view class="talk-end-text">{{$isEmpty(thoughts.thumbsUpCount)?'0':thoughts.thumbsUpCount}}</view>
 						</view>
 					</view>

@@ -26,7 +26,7 @@
 			</view>
 		</view>
 		<view class="flexColumn" style="justify-content: center;margin-top: 400rpx;" v-if="!kindInfo.records.length>0">
-			<image class="" v-if="oss" :src="oss+'pic_materialNoMessage.png'" mode="aspectFit" style="width: 160rpx;height: 146rpx;"></image>
+			<!-- <image class="" v-if="oss" :src="oss+'pic_materialNoMessage.png'" mode="aspectFit" style="width: 160rpx;height: 146rpx;"></image> -->
 			<view class="color_666769" style="font-size: 28rpx;line-height: 48rpx;margin-top: 44rpx;">
 				暂无材料信息
 			</view>

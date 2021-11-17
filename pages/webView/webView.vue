@@ -15,18 +15,18 @@
 			// console.log(res)
 			if (res.type == 'agreementEnergySaving') {
 				// this.url = 'https://www.h5.modulestore.cn?type=agreementEnergySaving' // 正式站
-				this.url = 'http://www.modulestore.cn:64083/?type=agreementEnergySaving' // 测试调试
+				this.url = 'https://h5.jienengbao.top/?type=agreementEnergySaving' //  节能保H5 正式站
 			} else if (res.type == 'privacyEnergySaving') {
 				// this.url = 'https://www.h5.modulestore.cn?type=privacyEnergySaving'
-				this.url = 'http://www.modulestore.cn:64083/?type=privacyEnergySaving'
+				this.url = 'https://h5.jienengbao.top/?type=privacyEnergySaving'
 			} else if (res.type == 'redness') {
 				// this.url = 'https://www.h5.modulestore.cn?type=previewEnergySaving'
-				this.url = 'http://www.modulestore.cn:64083/?type=previewEnergySaving'
+				this.url = 'https://h5.jienengbao.top/?type=previewEnergySaving'
 			} else if (res.type == 'userFaith') {
 				// this.url = 'https://www.h5.modulestore.cn?type=userFaithEnergySaving'
-				this.url = 'http://www.modulestore.cn:64083/?type=userFaithEnergySaving'
+				this.url = 'https://h5.jienengbao.top/?type=userFaithEnergySaving'
 			} else if (res.type == 'questionnaireLogic') {
-				this.url = 'https://www.h5.modulestore.cn/questionnaire_edit/'+ res.id +'/h5?token=' + uni.getStorageSync('userinfo').access_token
+				this.url = 'https://h5.jienengbao.top/questionnaire_edit/'+ res.id +'/h5?token=' + uni.getStorageSync('userinfo').access_token
 			}
 		}
 	}

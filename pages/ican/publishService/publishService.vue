@@ -125,8 +125,8 @@
 			<view class="priceContent" v-show="isFree==0">
 				<view class="flexRow priceContentItem color_303031" style="margin-bottom: 48rpx;">
 					<view class="flexRowStart" style="margin-right: 16rpx;">
-						<image @tap="changePriceCheck" v-if="priceStatus==true" :src="$ossUrl('publish_checked.png')" mode="aspectFit" style="margin-right: 16rpx; width: 40rpx;height: 40rpx;"></image>
-						<image @tap="changePriceCheck" v-else :src="$ossUrl('publish_check.png')" mode="aspectFit" style="margin-right: 16rpx; width: 40rpx;height: 40rpx;"></image>
+						<image @tap="changePriceCheck" v-if="priceStatus==true" :src="$ossUrl('icon_energy_pub_xuanzhong.png')" mode="aspectFit" style="margin-right: 16rpx; width: 40rpx;height: 40rpx;"></image>
+						<image @tap="changePriceCheck" v-else :src="$ossUrl('icon_energy_pub_weixuanzhong.png')" mode="aspectFit" style="margin-right: 16rpx; width: 40rpx;height: 40rpx;"></image>
 						<view class="">
 							宝贝价格
 						</view>
@@ -140,8 +140,8 @@
 				</view>
 				<view class="flexRow priceContentItem color_303031">
 					<view class="flexRowStart" style="margin-right: 16rpx;">
-						<image @tap="changeCashCheck" v-if="cashStatus==true" :src="$ossUrl('publish_checked.png')" mode="aspectFit" style="margin-right: 16rpx; width: 40rpx;height: 40rpx;"></image>
-						<image @tap="changeCashCheck" v-else :src="$ossUrl('publish_check.png')" mode="aspectFit" style="margin-right: 16rpx; width: 40rpx;height: 40rpx;"></image>
+						<image @tap="changeCashCheck" v-if="cashStatus==true" :src="$ossUrl('icon_energy_pub_xuanzhong.png')" mode="aspectFit" style="margin-right: 16rpx; width: 40rpx;height: 40rpx;"></image>
+						<image @tap="changeCashCheck" v-else :src="$ossUrl('icon_energy_pub_weixuanzhong.png')" mode="aspectFit" style="margin-right: 16rpx; width: 40rpx;height: 40rpx;"></image>
 						<view class="">
 							线下价格
 						</view>
@@ -617,11 +617,14 @@
 		margin-left: 18rpx;
 	}
 	.checked{
-		color: #f73737 !important;
-		background: rgba(247, 55, 55, .1) !important;
+		// color: #f73737 !important;
+		color: #46B28B !important;
+		// background: rgba(247, 55, 55, .1) !important;
+		background: #ECF7F3 !important;
 	}
 	.freeChecked{
-		color: #f73737 !important;
+		// color: #f73737 !important;
+		color: #46B28B !important;
 	}
 	.title{
 		font-size: 32rpx;

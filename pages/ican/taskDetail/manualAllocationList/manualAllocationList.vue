@@ -73,7 +73,7 @@
 						</label>
 					</checkbox-group>
 				</view>
-				<image class="emptyImg" v-if="!showlist.length > 0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+				<image class="emptyImg" v-if="!showlist.length > 0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 				<view class="bottom-safe" style="height: 112rpx;"></view>
 			</scroll-view>
 		</view>

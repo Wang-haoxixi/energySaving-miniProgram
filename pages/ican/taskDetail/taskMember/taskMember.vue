@@ -23,7 +23,7 @@
 						</view>
 				</view>
 			</view>
-			<image class="emptyImg" v-if="!showList.length>0 && oss" :src="oss+'pic_noMessage.png'"></image>
+			<image class="emptyImg" style="height: 260rpx;" v-if="!showList.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'"></image>
 		</view>
 	</view>
 	</view>

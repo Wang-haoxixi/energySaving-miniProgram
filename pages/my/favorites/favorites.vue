@@ -67,7 +67,7 @@
 							</view>
 						</view>
 					</view>
-					<image class="emptyImg" v-if="!magicBoxList.records.length > 0 &&oss" :src="oss+'pic_noCollect.png'" mode="aspectFit"></image>
+					<image class="emptyImg" v-if="!magicBoxList.records.length > 0 &&oss" :src="oss+'pic_energy_default_wushoucang.png'" mode="aspectFit"></image>
 					<uni-load-more :status="magicBoxStatus" v-if="magicBoxList.records.length > 0"></uni-load-more>
 					<view class="safe-bottom"></view>
 				</scroll-view>
@@ -82,7 +82,7 @@
 						</view>
 						<view class="second-line color_666769">{{$isEmpty(item.workplace)?'':item.workplace}}</view>
 					</view>
-					<image class="emptyImg" v-if="!recruit.records.length > 0 &&oss" :src="oss+'pic_noCollect.png'" mode="aspectFit"></image>
+					<image class="emptyImg" v-if="!recruit.records.length > 0 &&oss" :src="oss+'pic_energy_default_wushoucang.png'" mode="aspectFit"></image>
 					<uni-load-more :status="recruitStatus" v-if="recruit.records.length > 0"></uni-load-more>
 					<view class="safe-bottom"></view>
 				</scroll-view>
@@ -105,7 +105,7 @@
 							</view>
 						</view>
 					</view>
-					<image class="emptyImg" v-if="!materialInfo.records.length > 0 &&oss" :src="oss+'pic_noCollect.png'" mode="aspectFit"></image>
+					<image class="emptyImg" v-if="!materialInfo.records.length > 0 &&oss" :src="oss+'pic_energy_default_wushoucang.png'" mode="aspectFit"></image>
 					<uni-load-more :status="materialStatus" v-if="materialInfo.records.length > 0"></uni-load-more>
 					<view class="safe-bottom"></view>
 				</scroll-view>
@@ -128,7 +128,7 @@
 							</view>
 						</view>
 					</view>
-					<image class="emptyImg" v-if="!articleInfo.records.length > 0 &&oss" :src="oss+'pic_noCollect.png'" mode="aspectFit"></image>
+					<image class="emptyImg" v-if="!articleInfo.records.length > 0 &&oss" :src="oss+'pic_energy_default_wushoucang.png'" mode="aspectFit"></image>
 					<uni-load-more :status="articleStatus" v-if="articleInfo.records.length > 0"></uni-load-more>
 					<view class="safe-bottom"></view>
 				</scroll-view>
@@ -149,7 +149,7 @@
 							</view>
 						</view>
 					</view>
-					<image class="emptyImg" v-if="!activityInfo.records.length > 0 &&oss" :src="oss+'pic_noCollect.png'" mode="aspectFit"></image>
+					<image class="emptyImg" v-if="!activityInfo.records.length > 0 &&oss" :src="oss+'pic_energy_default_wushoucang.png'" mode="aspectFit"></image>
 					<uni-load-more :status="activityStatus" v-if="activityInfo.records.length > 0"></uni-load-more>
 					<view class="safe-bottom"></view>
 				</scroll-view>
@@ -607,8 +607,10 @@
 			margin-right: 20rpx;
 
 			&.item_active {
-				color: #F74437;
-				background-color: rgba(247, 68, 55, .1);
+				// color: #F74437;
+				color: #46B28B;
+				// background-color: rgba(247, 68, 55, .1);
+				background-color: #DAF0E8;
 			}
 		}
 	}

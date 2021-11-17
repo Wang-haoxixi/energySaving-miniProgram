@@ -45,7 +45,7 @@
 							</view>
 							<radio-group name="">
 								<label @tap.stop="checkForm(item,item2)" class="flexRowStart" v-for="(item2,index2) of item.optionsList" :key="index2" style="margin-top: 40rpx;">
-									<radio :checked="item2.select"/>
+									<radio :checked="item2.select" color="#46B28B"/>
 									<view class="color_666769">
 										{{$isEmpty(item2.label)?'':item2.label}}
 									</view>
@@ -71,7 +71,7 @@
 		</view>
 		<view class="bottom-safe" style="height: 112rpx;"></view>
 		<view class="btn">
-			<view class="button submitOrder" @tap="submitForm()">
+			<view class="button submitOrder bgColor_clickable" @tap="submitForm()">
 				提交
 			</view>
 		</view>
@@ -359,9 +359,11 @@
 	.active {
 		padding: 14rpx 36rpx;
 		border-radius: 20rpx;
-		color: #F74437;
-		background: rgba(247, 68, 55, 0.1);
-		border: 2rpx solid rgba(247, 68, 55, 0.1);
+		// color: #F74437;
+		color: #FFFFFF;
+		// background: rgba(247, 68, 55, 0.1);
+		background: #46B28B;
+		border: 2rpx solid #46B28B;
 		margin-right: 28rpx;
 		position: relative;
 	}
@@ -369,8 +371,8 @@
 	.unactive {
 		padding: 14rpx 36rpx;
 		border-radius: 20rpx;
-		border: 2rpx solid #EFF0F1;
-		background-color: #FFFFFF;
+		border: 2rpx solid #46B28B;
+		background-color: #ECF7F3;
 		margin-right: 28rpx;
 		position: relative;
 	}

@@ -142,7 +142,9 @@
 								// success: function(image) {
 								// 	that.soInfo.org.avatar = image.path
 								// }
-								url:`${that.$http_url}admin/file/app/sftp/upload`, //开发者服务器地址
+								url:`${that.$http_url}/admin/file/app/sftp/upload`, //开发者服务器地址
+								// url:`https://www.modulestore.cn/api/admin/file/app/sftp/upload`, //开发者服务器地址
+								// url:`${that.$http_url}/admin/sys_file/oss/upload`, //开发者服务器地址
 								header: {
 									"Content-Type": "multipart/form-data",
 									"Authorization":uni.getStorageSync('token')

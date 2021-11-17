@@ -7,7 +7,7 @@
 					<view class="activityInfo">
 						<view class="bold doubleEllipsis name color_303031 activityName">{{ $isEmpty(item.name)?'':item.name}}</view>
 						<view class="">
-							<view class="color_3CD489 bold activityTicket" v-if="item.ticketingManagements && item.ticketingManagements[0].ticketingType === '1'">免费</view>
+							<view style="color: #46B28B;" class="bold activityTicket" v-if="item.ticketingManagements && item.ticketingManagements[0].ticketingType === '1'">免费</view>
 							<view class="color_F74437 bold activityTicket" v-if="item.ticketingManagements && item.ticketingManagements[0].ticketingType === '2'">{{ getMoney(item.ticketingManagements[0])}}</view>
 							<view class="color_919397 activityCity">
 								{{$isEmpty(item.startTime)?'':item.startTime.substring(0,10)}}
@@ -16,7 +16,7 @@
 						</view>
 					</view>
 				</view>
-				<image class="emptyImg" v-if="!acticityInfo.records.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+				<image class="emptyImg" v-if="!acticityInfo.records.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 				<uni-load-more :status="acticityStatus" v-if="acticityInfo.records.length>0"></uni-load-more>
 				<view class="bottom-safe"></view>
 			</scroll-view>

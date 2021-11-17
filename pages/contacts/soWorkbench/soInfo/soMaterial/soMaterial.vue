@@ -10,7 +10,7 @@
 						<view :class="status?'active':'unactive'" @tap="checkSoMaterial" style="margin-bottom: 10rpx;">
 							组织材料
 						</view>
-						<view class="" v-if="status" style="width: 12rpx;height: 6rpx;background-color: #F74437;border-radius: 4rpx;">
+						<view class="" v-if="status" style="width: 12rpx;height: 6rpx;background-color: #46B28B;border-radius: 4rpx;">
 
 						</view>
 					</view>
@@ -18,7 +18,7 @@
 						<view :class="status?'unactive':'active'" @tap="checkCollectMaterial" style="margin-bottom: 10rpx;">
 							收藏
 						</view>
-						<view class="" v-if="!status" style="width: 12rpx;height: 6rpx;background-color: #F74437;border-radius: 4rpx;">
+						<view class="" v-if="!status" style="width: 12rpx;height: 6rpx;background-color: #46B28B;border-radius: 4rpx;">
 
 						</view>
 					</view>
@@ -85,7 +85,7 @@
 							</view>
 						</view>
 					</view>
-					<image class="emptyImg" v-if="!collectList.records.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+					<image class="emptyImg" v-if="!collectList.records.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 					<uni-load-more :status="materialStatus" v-if="collectList.records.length>0"></uni-load-more>
 				</scroll-view>
 				<view class="bottom-safe" style="height: 112rpx;"></view>
@@ -270,7 +270,8 @@
 	}
 
 	.active {
-		color: #F74437;
+		// color: #F74437;
+		color: #46B28B;
 		font-size: 36rpx;
 		line-height: 50rpx;
 		font-weight: bold;

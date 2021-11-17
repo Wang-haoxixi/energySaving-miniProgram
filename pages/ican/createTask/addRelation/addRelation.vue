@@ -54,7 +54,7 @@
 									<checkbox class="select" :value="item.id" color="#FF6034" :checked="item.checked" />
 								</label>
 							</checkbox-group>
-							<image class="emptyImg" v-if="!materialList.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+							<image class="emptyImg" v-if="!materialList.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 							<uni-load-more :status="materialStatus" v-if="materialList.length>0 "></uni-load-more>
 						</scroll-view>
 						<view class="bottom-safe" style="height: 112rpx;"></view>
@@ -102,7 +102,7 @@
 									<checkbox class="select" :value="item.id" color="#FF6034" :checked="item.checked" />
 								</label>
 							</checkbox-group>
-							<image class="emptyImg" v-if="!questionnaireList.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+							<image class="emptyImg" v-if="!questionnaireList.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 							<uni-load-more :status="questionnaireStatus" v-if="questionnaireList.length>0"></uni-load-more>
 						</scroll-view>
 						<view class="bottom-safe" style="height: 112rpx;"></view>
@@ -138,7 +138,7 @@
 									<checkbox class="select" :value="item.id" color="#FF6034" :checked="item.checked" />
 								</label>
 							</checkbox-group>
-							<image class="emptyImg" v-if="!activityList.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+							<image class="emptyImg" v-if="!activityList.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 							<uni-load-more :status="activityStatus" v-if="activityList.length>0"></uni-load-more>
 						</scroll-view>
 						<view class="bottom-safe" style="height: 112rpx;"></view>
@@ -623,7 +623,8 @@
 				width: 12rpx;
 				height: 6rpx;
 				border-radius: 3rpx;
-				background-color: #F74437;
+				// background-color: #F74437;
+				background-color: #46B28B;
 				margin: 10rpx auto;
 			}
 		}
@@ -779,7 +780,8 @@
 	}
 
 	.active {
-		color: #f74437;
+		// color: #f74437;
+		color: #46B28B;
 		font-size: 36rpx;
 		font-weight: bold;
 	}

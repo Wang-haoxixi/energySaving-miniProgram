@@ -14,10 +14,10 @@
 		</view>
 		<view class="contentWrap">
 			<view class="flexRowStart recommendTitle" v-if="!$isEmpty(data.recommendList) && data.recommendList.length>0">
-				<image :src="$ossUrl('activity_hotRecommend.png')" mode="" style="width: 36rpx;height: 40rpx;margin-right: 12rpx;"></image>
+				<image :src="$ossUrl('icon_energy_activitycenter _tuijian.png')" mode="" style="width: 36rpx;height: 40rpx;margin-right: 12rpx;"></image>
 				<view class="color_303031">强烈推荐</view>
 			</view>
-			<swiper v-if="!$isEmpty(data.recommendList) && data.recommendList.length>0"  class="recommend-swiper" :style="{height:[data.recommendList.length>2?'882rpx':'476rpx']}" circular indicator-dots autoplay indicator-color="#f744374D" indicator-active-color="#f74437">
+			<swiper v-if="!$isEmpty(data.recommendList) && data.recommendList.length>0"  class="recommend-swiper" :style="{height:[data.recommendList.length>2?'882rpx':'476rpx']}" circular indicator-dots autoplay indicator-color="#9DD4C2" indicator-active-color="#46B28B">
 				<swiper-item class="recommend-swiper-item">
 					<view v-if="index<4" class="recommend-swiper-view" v-for="(item,index) in data.recommendList" :key="index" @tap="detail(item)">
 						<image class="recommend-swiper-view-img" mode="aspectFill" :src="item.poster"></image>
@@ -306,7 +306,8 @@
 						text-align: center;
 						font-size: 24rpx;
 						color: #FFFFFF;					
-						background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+						// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+						background-color: #46B28B;
 						border-radius: 38rpx;
 					}
 				}

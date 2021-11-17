@@ -50,7 +50,7 @@
 								</view>
 							</view>
 						</view>
-						<image class="emptyImg" v-if="!serviceList.length>0 &&oss" :src="oss+'pic_noOrderList.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!serviceList.length>0 &&oss" :src="oss+'pic_energy_default_wudingdan.png'" mode="aspectFit"></image>
 						<uni-load-more :status="serviceMoreStatus" v-if="serviceList.length>0"></uni-load-more>
 					</scroll-view>
 				</swiper-item>
@@ -88,7 +88,7 @@
 								</view>
 							</view>
 						</view>
-						<image class="emptyImg" v-if="!activityList.length>0 && oss" :src="oss+'pic_noOrderList.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!activityList.length>0 && oss" :src="oss+'pic_energy_default_wudingdan.png'" mode="aspectFit"></image>
 						<uni-load-more :status="activityMoreStatus" v-if="activityList.length>0"></uni-load-more>
 					</scroll-view>
 				</swiper-item>
@@ -132,7 +132,7 @@
 								</view>
 							</view>
 						</view>
-						<image class="emptyImg" v-if="!questionaireList.length>0 && oss" :src="oss+'pic_noOrderList.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!questionaireList.length>0 && oss" :src="oss+'pic_energy_default_wudingdan.png'" mode="aspectFit"></image>
 						<uni-load-more :status="questionaireMoreStatus" v-if="questionaireList.length>0"></uni-load-more>
 					</scroll-view>
 				</swiper-item>
@@ -484,7 +484,8 @@
 					width: 20rpx;
 					height: 6rpx;
 					border-radius: 10rpx;
-					background: linear-gradient(180deg, #FF825C 0%, #FF3636 100%);
+					// background: linear-gradient(180deg, #FF825C 0%, #FF3636 100%);
+					background-color: #46B28B;
 					margin: 10rpx auto;
 				}
 			}

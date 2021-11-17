@@ -21,8 +21,8 @@
 							</view>
 							<view class="flexRowStart">
 								<view class="flexRowStart" @tap="changePraiseStatus(item)">
-									<image v-if="oss && item.praiseStatus == 0" :src="oss+'icon_find_action_like.png'" style="width: 30rpx;height: 30rpx;margin-right: 14rpx;"></image>
-									<image v-if="oss && item.praiseStatus == 1" :src="oss+'icon_find_action_liked.png'" style="width: 30rpx;height: 30rpx;margin-right: 14rpx;"></image>
+									<image v-if="oss && item.praiseStatus == 0" :src="oss+'icon_energy_attention_dianzan.png'" style="width: 30rpx;height: 30rpx;margin-right: 14rpx;"></image>
+									<image v-if="oss && item.praiseStatus == 1" :src="oss+'icon_energy_attention_dianzan_selected.png'" style="width: 30rpx;height: 30rpx;margin-right: 14rpx;"></image>
 									<view class="">
 										{{$isEmpty(item.likes)?'0':item.likes}}
 									</view>
@@ -41,7 +41,7 @@
 					</view>
 				</view>
 			</view>
-			<image class="emptyImg" v-if="!commentInfo.records.length > 0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+			<image class="emptyImg" v-if="!commentInfo.records.length > 0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 			<uni-load-more :status="commentStatus" v-if="commentInfo.records.length>0"></uni-load-more>
 			<view class="bottom-safe" style="height: 112rpx;"></view>
 		</view>

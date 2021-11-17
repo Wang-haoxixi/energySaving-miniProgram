@@ -453,7 +453,7 @@
 	.share {
 		flex: 1;
 		color: #272727;
-		background-color: #EDEDED;
+		background-color: #ECEEF0;
 		height: 92rpx;
 		font-size: 30rpx;
 		line-height: 92rpx;
@@ -465,7 +465,8 @@
 	.join {
 		flex: 1;
 		margin-left: 22rpx;
-		background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		background-color: #46B28B;
 		border-radius: 64rpx;
 		height: 92rpx;
 		line-height: 92rpx;
@@ -601,14 +602,16 @@
 						border-radius: 42rpx;
 						text-align: center;
 						height: 52rpx;
-						background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+						// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+						background-color: #46B28B;
 					}
 
 					.attentioned {
 						margin-left: 20rpx;
 						color: #FFFFFF;
 						width: 140rpx;
-						background-color: #FFD6D6;
+						// background-color: #FFD6D6;
+						background-color: #C7E8DC;
 						border-radius: 42rpx;
 						text-align: center;
 						height: 52rpx;

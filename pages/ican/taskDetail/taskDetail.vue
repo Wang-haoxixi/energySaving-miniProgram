@@ -85,7 +85,7 @@
 				<view class="flexRow urgencyStatus">
 					<view class="flexRowStart">
 						<view class="urgencyStatusInfo">奖励分配</view>
-						<view class="color_2F80FF questionMark" @tap.stop="showMessage">
+						<view class="color_main_4fc975 questionMark" @tap.stop="showMessage">
 							?
 						</view>
 					</view>
@@ -1331,7 +1331,7 @@
 	.questionMark{
 		width: 26rpx;
 		height: 26rpx;
-		border: 2rpx solid #2F80FF;
+		border: 2rpx solid #46B28B;
 		margin-left: 14rpx;
 		border-radius: 50%;
 		font-size: 24rpx;
@@ -1709,7 +1709,8 @@
 					flex: 1;
 					height: 92rpx;
 					line-height: 92rpx;
-					background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+					// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+					background-color: #46B28B;
 					border-radius: 64rpx;
 					text-align: center;
 					color: #FFFFFF;

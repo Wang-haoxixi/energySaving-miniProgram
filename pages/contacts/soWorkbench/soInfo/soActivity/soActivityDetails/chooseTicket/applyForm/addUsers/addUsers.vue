@@ -28,7 +28,7 @@
 							<radio-group name="">
 								<label @tap.stop="checkForm(item,item2)" class="flexRowStart" v-for="(item2,index2) of item.optionsList" :key="index2"
 								 style="margin-top: 40rpx;">
-									<radio :checked="item2.select" />
+									<radio :checked="item2.select" color="#46B28B" />
 									<view class="color_666769">
 										{{$isEmpty(item2.label)?'':item2.label}}
 									</view>

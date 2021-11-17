@@ -1,8 +1,8 @@
 <template>
 	<view class="container">
 		<!-- <image :src="$ossUrl('pic_userInfo_logo.png')" mode="" style="width: 367rpx;height: 520rpx;margin-top: 300rpx;"></image> -->
-		<image src="../../static/image/pic_login_logo.png" mode="" style="width: 367rpx;margin-top: 300rpx;"></image>
-		<button class="button" style="background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);height: 92rpx;border-radius: 64rpx;" open-type="getPhoneNumber" @getphonenumber="decryptPhoneNumber">
+		<image :src="$ossUrl('pic_login_logo.png')" mode="" style="width: 367rpx;margin-top: 300rpx;"></image>
+		<button class="button" style="background: #46B28B;height: 92rpx;border-radius: 64rpx;" open-type="getPhoneNumber" @getphonenumber="decryptPhoneNumber">
 			手机号注册/登录
 		</button>
 		<view class="color_919397 remind">

@@ -104,7 +104,7 @@
 					</view>
 				</view>
 			</view>
-			<image class="emptyImg" v-if="!showEndList.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+			<image class="emptyImg" v-if="!showEndList.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 			<uni-load-more :status="activityMoreStatusEnd" v-if="showEndList.length>0"></uni-load-more>
 		</scroll-view>
 		<uni-popup ref="refusedialog" type="center">
@@ -269,7 +269,8 @@
 		padding: 8rpx 24rpx;
 		border-radius: 10rpx;
 		color: #FFFFFF;
-		background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		background-color: #46B28B;
 	}
 	.checkReasonBtn{
 		font-size: 24rpx;
@@ -277,7 +278,8 @@
 		padding: 8rpx 24rpx;
 		border-radius: 10rpx;
 		color: #FFFFFF;
-		background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+		background-color: #46B28B;
 	}
 	.popDialog {
 		width: 590rpx;

@@ -79,7 +79,7 @@
 				共{{$isEmpty(data.amount)?'0':data.amount}}件，合计：<text class="bottom-button-total color_3CD489" v-if="data.ticketingType==1">免费</text>
 				<text class="bottom-button-total color_F74437" v-else-if="data.ticketingType==2">{{getTotalMoney(data)}}</text>
 			</view>
-			<view class="button apply-result" @tap="goApplyResult">提交订单</view>
+			<view class="button apply-result bgColor_clickable" @tap="goApplyResult">提交订单</view>
 		</bottom-button>
 	</view>
 </template>
@@ -227,7 +227,7 @@
 	.userIcon{
 		background-color: #F5f7f8;
 		padding: 10rpx 24rpx;
-		border-radius: 50%;
+		border-radius: 5%;
 		font-size: 22rpx;
 	}
 	.borderBottom{

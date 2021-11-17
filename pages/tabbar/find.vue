@@ -178,13 +178,13 @@
 							<swiper-item item_contact_id="0" @touchstart="rednessStart" @touchend="rednessEnd">
 								<view class="swiper-item">
 									<uni-indexed-list :options="showFriendList" @refresh="refreshList" :listPulldownStatus="friendListStatus" :showRefreshStatus="showRefreshStatus"/>
-									<image class="emptyImg" v-if="!showFriendList.length>0 && oss" :src="oss+'pic_noFriend.png'" mode="aspectFit"></image>
+									<image class="emptyImg" v-if="!showFriendList.length>0 && oss" :src="oss+'pic_energy_default_wuhaoyou.png'" mode="aspectFit"></image>
 								</view>
 							</swiper-item>
 							<swiper-item item_contact_id="1">
 								<view class="swiper-item">
 									<uni-indexed-list :options="showList" :topList="topShowList"  @refresh="refreshSoList" :listPulldownStatus="soListStatus" :showRefreshStatus="showRefreshStatus"/>
-									<image class="emptyImg" v-if="!showList.length>0 && oss" :src="oss+'pic_noSo.png'" mode="aspectFit"></image>
+									<image class="emptyImg" v-if="!showList.length>0 && oss" :src="oss+'pic_energy_default_wuso.png'" mode="aspectFit"></image>
 								</view>
 							</swiper-item>
 							<swiper-item item_contact_id="2">
@@ -192,7 +192,7 @@
 									<scroll-view scroll-y="true" :style="{height:otherSwiperContactHeight + 'px'}" @scrolltolower="getMore" 
 									@refresherrefresh="remindPulldown" refresher-enabled="true" :refresher-triggered="remindPulldownStatus">
 										<remindList :list="remindinfo"></remindList>
-										<image class="emptyImg" v-if="!remindinfo.records.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+										<image class="emptyImg" v-if="!remindinfo.records.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 										<uni-load-more :status="remindMore" v-if="remindinfo.records.length>0"></uni-load-more>
 									</scroll-view>
 								</view>
@@ -202,7 +202,7 @@
 									<scroll-view scroll-y="true" :style="{height:otherSwiperContactHeight + 'px'}" 
 									@refresherrefresh="pendPulldown" refresher-enabled="true" :refresher-triggered="pendPulldownStatus">
 										<pendingList :list="pengdingList" @delete="deleteList"></pendingList>
-										<image class="emptyImg" v-if="!pengdingList.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+										<image class="emptyImg" v-if="!pengdingList.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 									</scroll-view>
 								</view>
 							</swiper-item>
@@ -2131,7 +2131,8 @@
 	.active_line{
 		width: 20rpx;
 		height: 6rpx;
-		background: linear-gradient(180deg, #FF825C 0%, #FF3636 100%);
+		// background: linear-gradient(180deg, #FF825C 0%, #FF3636 100%);
+		background-color: #46B28B;
 		border-radius: 10rpx;
 		margin-bottom: 6rpx;
 	}
@@ -2149,8 +2150,10 @@
 
 	.item_active {
 		font-weight: bold;
-		color: #F73737;
-		background: linear-gradient(89deg, #FFEFEA 0%, #FFD9D9 100%);
+		// color: #F73737;
+		color: #46B28B;
+		// background: linear-gradient(89deg, #FFEFEA 0%, #FFD9D9 100%);
+		background-color: #DAF0E8;
 	}
 
 	.item_unactive {
@@ -2177,7 +2180,8 @@
 			border-radius: 42rpx;
 			text-align: center;
 			height: 52rpx;
-			background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+			// background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);
+			background-color: #46B28B;
 		}
 		.attentioned {
 			font-size: 26rpx;

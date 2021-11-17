@@ -33,7 +33,7 @@
 							</view>
 						</view>
 						<uni-load-more :status="publishStatus" v-if="publishList.length>0"></uni-load-more>
-						<image class="emptyImg" v-if="!publishList.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!publishList.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 					</scroll-view>
 					<view class="bottom-safe" style="height: 112rpx;"></view>
 				</swiper-item>
@@ -54,7 +54,7 @@
 							</view>
 						</view>
 						<uni-load-more :status="joinStatus" v-if="joinList.length>0"></uni-load-more>
-						<image class="emptyImg" v-if="!joinList.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!joinList.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 					</scroll-view>
 					<view class="bottom-safe" style="height: 112rpx;"></view>
 				</swiper-item>
@@ -75,7 +75,7 @@
 							</view>
 						</view>
 						<uni-load-more :status="receptStatus" v-if="receptList.length>0"></uni-load-more>
-						<image class="emptyImg" v-if="!receptList.length>0 && oss" :src="oss+'pic_noMessage.png'" mode="aspectFit"></image>
+						<image class="emptyImg" v-if="!receptList.length>0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 					</scroll-view>
 					<view class="bottom-safe" style="height: 112rpx;"></view>
 				</swiper-item>

@@ -2,7 +2,7 @@
 	<view class="container">
 		<!-- <image v-if="oss" class="loginImg" :src="oss+'login_logo.png'"></image> -->
 		<!-- <image :src="$ossUrl('pic_userInfo_logo.png')" mode="" style="width: 367rpx;height: 520rpx;margin-top: 300rpx;"></image> -->
-		<image src="../../static/image/pic_login_logo.png" mode="" style="width: 367rpx;margin-top: 300rpx;"></image>
+		<image :src="$ossUrl('pic_login_logo.png')" mode="" style="width: 367rpx;margin-top: 300rpx;"></image>
 		<!-- <view class="slogan">我能成就知识网红</view> -->
 		<view class="title"><text>该程序需获得以下授权
 				获取您的公开信息（昵称、头像等）</text></view>
@@ -10,7 +10,7 @@
 			<view class="button back" @tap="back">
 				拒绝
 			</view>
-			<button class="button" style="margin: 0; background: linear-gradient(90deg, #FF825C 0%, #FF3636 100%);" @tap="decryptUserInfo">
+			<button class="button" style="margin: 0; background: #46B28B" @tap="decryptUserInfo">
 				允许
 			</button>
 		</view>
@@ -177,8 +177,8 @@
 
 	.back {
 		background: #FFFFFF;
-		border: 2rpx solid #F74437;
-		color: #F74437;
+		border: 2rpx solid #46B28B;
+		color: #46B28B;
 		width: 316rpx !important;
 		height: 88rpx;
 	}
