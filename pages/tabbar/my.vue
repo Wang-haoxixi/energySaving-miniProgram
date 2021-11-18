@@ -46,7 +46,8 @@
 				<view v-else>
 					<view class="title" @tap="login">
 						<view class="avatar">
-							<image v-if="oss" class="avatar" :src="oss + 'default_littleIcon.png'" mode="aspectFill"></image>
+							<!-- <image v-if="oss" class="avatar" :src="oss + 'default_littleIcon.png'" mode="aspectFill"></image> -->
+							<image v-if="oss" class="avatar" :src="oss + 'icon_energy_default_miniavatar.png'" mode="aspectFill"></image>
 						</view>
 						<view class="content">
 							<view class="login">注册/登录</view>
