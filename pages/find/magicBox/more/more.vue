@@ -26,8 +26,8 @@
 				<view class="flexColumn showListWrap">
 					<view class="color_666769 show" @click="changeOrderField('create_time')">最新发布</view>
 					<view class="color_666769 show" @click="changeOrderField('score')">最高评分</view>
-					<view class="color_666769 show" @click="changeOrderField('pricedesc')">宝贝价格降序</view>
-					<view class="color_666769 show" @click="changeOrderField('priceasc')">宝贝价格升序</view>
+					<view class="color_666769 show" @click="changeOrderField('pricedesc')">能贝价格降序</view>
+					<view class="color_666769 show" @click="changeOrderField('priceasc')">能贝价格升序</view>
 					<view class="color_666769 show" @click="changeOrderField('cashdesc')">人民币价格降序</view>
 					<view class="color_666769 show" @click="changeOrderField('cashasc')">人民币价格升序</view>
 				</view>
@@ -178,11 +178,11 @@
 					this.orderType='desc'
 				} else if (item == 'pricedesc') {
 					this.orderField = 'price'
-					this.orderFieldName = '宝贝价格降序';
+					this.orderFieldName = '能贝价格降序';
 					this.orderType='desc'
 				} else if (item == 'priceasc') {
 					this.orderField = 'price'
-					this.orderFieldName = '宝贝价格升序';
+					this.orderFieldName = '能贝价格升序';
 					this.orderType='asc'
 				} else if (item == 'cashdesc') {
 					this.orderField = 'cash'

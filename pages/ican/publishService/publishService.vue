@@ -128,11 +128,11 @@
 						<image @tap="changePriceCheck" v-if="priceStatus==true" :src="$ossUrl('icon_energy_pub_xuanzhong.png')" mode="aspectFit" style="margin-right: 16rpx; width: 40rpx;height: 40rpx;"></image>
 						<image @tap="changePriceCheck" v-else :src="$ossUrl('icon_energy_pub_weixuanzhong.png')" mode="aspectFit" style="margin-right: 16rpx; width: 40rpx;height: 40rpx;"></image>
 						<view class="">
-							宝贝价格
+							能贝价格
 						</view>
 					</view>
 					<view class="flexRowStart" style="flex: 1;">
-						<input type="number" :disabled="!priceStatus" style="text-align: right;flex: 1;" placeholder="请输入宝贝价格" placeholder-style="color:#BCC4CB" v-model="price" />
+						<input type="number" :disabled="!priceStatus" style="text-align: right;flex: 1;" placeholder="请输入能贝价格" placeholder-style="color:#BCC4CB" v-model="price" />
 						<view class="" style="margin-left: 16rpx;">
 							贝
 						</view>
@@ -416,13 +416,13 @@
 						})
 					}else if(this.priceStatus ==true && this.$isEmpty(this.price)){
 						uni.showToast({
-							title:"请输入宝贝价格",
+							title:"请输入能贝价格",
 							icon:"none",
 							duration:1000
 						})
 					}else if(this.priceStatus ==true && this.price==0){
 						uni.showToast({
-							title:"宝贝价格应大于0",
+							title:"能贝价格应大于0",
 							icon:"none",
 							duration:1000
 						})

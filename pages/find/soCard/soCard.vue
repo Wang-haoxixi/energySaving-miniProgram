@@ -99,7 +99,7 @@
 							{{$isEmpty(data.bellAssets)?'0':data.bellAssets}}
 						</view>
 						<view class="sodata-item-end">
-							宝贝
+							能贝
 						</view>
 					</view>
 					<view class="sodata-item">

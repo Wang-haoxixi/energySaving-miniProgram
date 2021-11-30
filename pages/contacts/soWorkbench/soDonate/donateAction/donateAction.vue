@@ -8,7 +8,7 @@
 		</view>
 		<view class="" style="margin-bottom: 60rpx;font-size: 28rpx;line-height: 40rpx;">
 			<view class="" style="margin-bottom: 24rpx;" v-if="type=='donate'">
-				捐赠宝贝给组织
+				捐赠能贝给组织
 			</view>
 			<view class="" style="margin-bottom: 24rpx;" v-if="type=='transfer'">
 				转赠金额

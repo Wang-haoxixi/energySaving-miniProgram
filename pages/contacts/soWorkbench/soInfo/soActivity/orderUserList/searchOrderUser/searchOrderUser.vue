@@ -69,7 +69,7 @@
 				</view>
 				<view class="flexRow" v-if="item.paymentMethod == 1">
 					<view class="color_3CD489">
-						宝贝支付-支付成功
+						能贝支付-支付成功
 					</view>
 					<view class="color_919397">
 						共{{$isEmpty(item.contactsCount)?'':item.contactsCount}}条报名信息

@@ -30,7 +30,7 @@
 							待支付
 						</view>
 						<view class="color_919397 content-text" v-else-if="item.paymentMethod==1 && item.orderStatus==1">
-							宝贝付款-已支付
+							能贝付款-已支付
 						</view>
 						<view class="color_BABEC0 content-text" v-else-if="item.orderStatus==3">
 							已取消

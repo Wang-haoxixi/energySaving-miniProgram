@@ -31,7 +31,7 @@
 						</view>
 						<view class="exponent-item" @tap="navigateTo('nengbei')">
 							<view class="exponent-title">{{ $isEmpty(data.exponent.bellAssets)?'0':parseInt(data.exponent.bellAssets) }}</view>
-							<view class="exponent-content">宝贝</view>
+							<view class="exponent-content">能贝</view>
 						</view>
 						<view class="exponent-item" @tap="navigateTo('ownSoList')">
 							<view class="exponent-title">{{ $isEmpty(data.exponent.soCount)?'0':data.exponent.soCount }}</view>
@@ -61,7 +61,7 @@
 						</view>
 						<view class="exponent-item">
 							<view class="exponent-title">0</view>
-							<view class="exponent-content">宝贝</view>
+							<view class="exponent-content">能贝</view>
 						</view>
 						<view class="exponent-item">
 							<view class="exponent-title">0</view>
@@ -230,6 +230,7 @@
 			this.isLogin = !this.$isEmpty(uni.getStorageSync('token'));
 			if (this.isLogin) {
 				this.$http.get('admin/app/my').then(res => {
+					console.log('res..',res)
 					this.data = res.data.data;
 					uni.setStorageSync('user', res.data.data);
 				});

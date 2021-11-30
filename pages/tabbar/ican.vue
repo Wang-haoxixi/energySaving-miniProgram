@@ -15,7 +15,8 @@
 				<view class="function_centry_item flexColumn" @tap="goServiceCenter">
 					<image :src="$ossUrl('icon_energy_home_yingyongzujian.png')" mode="" class="img"></image>
 					<view class="function_centry_item_title">
-						应用组件
+						<!-- 应用组件 -->
+						节能产品
 					</view>
 				</view>
 				<view class="function_centry_item flexColumn" @tap="goFunction('specialList')">

@@ -182,7 +182,7 @@
 						付款方式
 					</view>
 					<view class="color_919397">
-						 宝贝
+						 能贝
 					</view>
 				</view>
 				<view class="button" style="width: 100%;" @tap="toOpen">

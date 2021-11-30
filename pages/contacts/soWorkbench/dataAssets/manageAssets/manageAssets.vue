@@ -5,7 +5,7 @@
 		</view>
 		<view class="my-item" @tap="transfer" v-if="isAdmin==1||isAdmin==2">
 			<image v-if="oss" class="my-item-icon" :src="oss + 'icon_my_transfer.png'"></image>
-			<view class="my-item-text">宝贝转账</view>
+			<view class="my-item-text">能贝转账</view>
 			<image v-if="oss" class="my-item-right" :src="oss + 'icon_right_gray.png'"></image>
 		</view>
 		<view class="my-item" @tap="order">

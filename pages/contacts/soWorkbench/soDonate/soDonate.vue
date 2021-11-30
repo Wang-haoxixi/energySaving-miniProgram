@@ -5,7 +5,7 @@
 				<image v-if="oss" :src="oss+'pic_donateBanner.png'" mode="aspectFit" style="width: 100%;margin-bottom: 30rpx;height: 270rpx;"></image>
 				<view class="bold color_FFFFFF" style="font-size: 36rpx;line-height: 48rpx;position: absolute;top: 46rpx;left: 36rpx;">
 					<view class="">
-						捐赠宝贝
+						捐赠能贝
 					</view>
 					<view class="singleEllipsis" style="font-size: 32rpx;line-height: 48rpx;max-width: 320rpx;">
 						共建{{$isEmpty(name)?'':name}}
@@ -40,7 +40,7 @@
 						{{$isEmpty(item.realName)?'':item.realName}}
 					</view>
 					<view class="color_2F80FF" style="margin-left: 20rpx;">
-						{{$isEmpty(item.createTime)?'':getDateDiff(item.createTime)}} 捐赠了{{$isEmpty(item.amount)?'':item.amount.toFixed(2)}}宝贝
+						{{$isEmpty(item.createTime)?'':getDateDiff(item.createTime)}} 捐赠了{{$isEmpty(item.amount)?'':item.amount.toFixed(2)}}能贝
 					</view>
 				</view>
 				<view class="bottom-safe" style="height: 112rpx;"></view>

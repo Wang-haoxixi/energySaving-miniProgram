@@ -41,10 +41,10 @@
 									待支付
 								</view>
 								<view class="color_3CD489 icon" v-else-if="item.paymentMethod==1 && item.status==1">
-									宝贝支付-交易成功
+									能贝支付-交易成功
 								</view>
 								<view class="color_919397 icon" v-else-if="item.paymentMethod==1 && item.status==2">
-									宝贝支付-交易取消
+									能贝支付-交易取消
 								</view>
 								<view class="color_919397 icon" v-else-if="item.paymentMethod==0 && item.status==2">
 									交易取消
@@ -138,10 +138,10 @@
 									待支付
 								</view>
 								<view class="color_3CD489 icon" v-else-if="item.paymentMethod==1 && item.status==1">
-									宝贝支付-交易成功
+									能贝支付-交易成功
 								</view>
 								<view class="color_919397 icon" v-else-if="item.paymentMethod==1 && item.status==2">
-									宝贝支付-交易取消
+									能贝支付-交易取消
 								</view>
 								<view class="color_919397 icon" v-else-if="item.paymentMethod==0 && item.status==2">
 									交易取消
@@ -235,10 +235,10 @@
 									待支付
 								</view>
 								<view class="color_3CD489 icon" v-else-if="item.paymentMethod==1 && item.status==1">
-									宝贝支付-交易成功
+									能贝支付-交易成功
 								</view>
 								<view class="color_919397 icon" v-else-if="item.paymentMethod==1 && item.status==2">
-									宝贝支付-交易取消
+									能贝支付-交易取消
 								</view>
 								<view class="color_919397 icon" v-else-if="item.paymentMethod==0 && item.status==2">
 									交易取消
@@ -329,10 +329,10 @@
 									待支付
 								</view>
 								<view class="color_3CD489 icon" v-else-if="item.paymentMethod==1 && item.status==1">
-									宝贝支付-交易成功
+									能贝支付-交易成功
 								</view>
 								<view class="color_919397 icon" v-else-if="item.paymentMethod==1 && item.status==2">
-									宝贝支付-交易取消
+									能贝支付-交易取消
 								</view>
 								<view class="color_919397 icon" v-else-if="item.paymentMethod==0 && item.status==2">
 									交易取消
@@ -418,10 +418,10 @@
 									待支付
 								</view>
 								<view class="color_3CD489 icon" v-else-if="item.paymentMethod==1 && item.status==1">
-									宝贝支付-交易成功
+									能贝支付-交易成功
 								</view>
 								<view class="color_919397 icon" v-else-if="item.paymentMethod==1 && item.status==2">
-									宝贝支付-交易取消
+									能贝支付-交易取消
 								</view>
 								<view class="color_919397 icon" v-else-if="item.paymentMethod==0 && item.status==2">
 									交易取消

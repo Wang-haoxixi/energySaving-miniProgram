@@ -48,7 +48,7 @@
 						<view class="flexRowStart">
 							<image :src="$ossUrl('pic_taskList_reward.png')" class="paymentMethod-icon"></image>
 							<view class="paymentMethod-name">
-								宝贝支付
+								能贝支付
 							</view>
 						</view>
 						<radio value="ican" style="transform: scale(0.7)" :checked="icanPay" />

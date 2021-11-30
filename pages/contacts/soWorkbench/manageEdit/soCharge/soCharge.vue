@@ -2,7 +2,7 @@
 	<view class="container">
 		<view class="flexRow" style="margin-bottom: 40rpx;">
 			<view class="color_303031 bold">
-				设置收费宝贝
+				设置收费能贝
 			</view>
 			<view style="margin-right: -16rpx;">
 				<switch color="#46B28B" :checked="status==true" @change="switchChangecharge" style="transform:scale(0.7)" />

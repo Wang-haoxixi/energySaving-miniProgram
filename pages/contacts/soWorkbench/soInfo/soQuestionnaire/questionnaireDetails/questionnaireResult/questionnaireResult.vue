@@ -17,7 +17,7 @@
 						提交成功，感谢作答。
 					</view>
 					<view>
-						恭喜您获得<text class="color_F74437 bold">{{awardNumber}}宝贝</text>奖励
+						恭喜您获得<text class="color_F74437 bold">{{awardNumber}}能贝</text>奖励
 					</view>
 				</view>
 				<view class="contentWrap" v-if="status==2">
@@ -25,7 +25,7 @@
 						提交成功
 					</view>
 					<view>
-						与宝贝奖励只差一点，请继续努力。
+						与能贝奖励只差一点，请继续努力。
 					</view>
 				</view>
 				<view class="contentWrap" v-if="status==0 || status==3">

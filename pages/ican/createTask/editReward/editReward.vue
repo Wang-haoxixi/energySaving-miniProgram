@@ -210,7 +210,7 @@
 					} else if (this.autoAllocationStatus == true) {
 						if (this.autoAllocationValue == '' || this.autoAllocationValue == 0) {
 							uni.showToast({
-								title: "分配宝贝不能为空",
+								title: "分配能贝不能为空",
 								icon: 'none',
 								duration: 1000
 							})
