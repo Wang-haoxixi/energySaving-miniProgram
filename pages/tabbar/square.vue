@@ -9,8 +9,10 @@
 				</view>
 				<image :src="$ossUrl('square_taskList.png')" mode="" style="width: 72rpx;height: 72rpx;margin-left: 24rpx;" @tap="goTaskList"></image>
 			</view>
+			<!-- <banner slotNumber="energy_mini_hall_banner" :customStyle="{width:'702rpx',margin:'0 24rpx'}"></banner> -->
+			<banner slotNumber="energy_mini_hall_banner" :customStyle="{width:'702rpx',margin:'0 24rpx'}"></banner>
 			<view class="" style="padding: 0rpx 24rpx 16rpx;">
-				<banner slotNumber="demand_hall_banner" :customStyle="{width:'702rpx'}"></banner>
+				<!-- <banner slotNumber="energy_mini_hall_banner" :customStyle="{width:'702rpx'}"></banner> -->
 				<view class="" style="position: relative;">
 					<view class="taskList" v-for="(item,index) of taskList" :key="index" @tap="goTskDetail(item)">
 						<view class="flexRowStart">

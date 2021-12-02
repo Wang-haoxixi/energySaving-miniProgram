@@ -99,7 +99,7 @@
 								<scroll-view scroll-y="true" class="firstRecommendScroll" :style="{height:scrollHeight + 'px'}" @scrolltolower="thoughtsMore"
 								 @refresherrefresh="allPulldown" refresher-enabled="true" :refresher-triggered="allPulldownStatus">
 									<!-- <banner slotNumber="app_first_page" :isFresh="saveToken" :customStyle="{width:'686rpx',margin:'0 32rpx'}"></banner> -->
-									<banner slotNumber="energy_mini_community_banner" :isFresh="saveToken" :customStyle="{width:'686rpx',margin:'0 32rpx'}"></banner>
+									<banner slotNumber="energy_mini_community_banner" :isFresh="saveToken" :customStyle="{width:'702rpx',margin:'0 24rpx'}"></banner>
 									<view class="logoImg" style="margin-top: 16rpx;">
 										行业达人
 									</view>

@@ -956,7 +956,7 @@
 			"pages": [{
 				"path": "specialList/specialList",
 				"style": {
-					"navigationBarTitleText": "行业大咖",
+					"navigationBarTitleText": "节能大咖",
 					"enablePullDownRefresh": false,
 					"navigationBarBackgroundColor": "#FFFFFF"
 				}

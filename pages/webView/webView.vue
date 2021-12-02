@@ -12,7 +12,6 @@
 			};
 		},
 		onLoad(res) {
-			// console.log(res)
 			if (res.type == 'agreementEnergySaving') {
 				// this.url = 'https://www.h5.modulestore.cn?type=agreementEnergySaving' // 正式站
 				this.url = 'https://h5.jienengbao.top/?type=agreementEnergySaving' //  节能保H5 正式站
@@ -27,6 +26,8 @@
 				this.url = 'https://h5.jienengbao.top/?type=userFaithEnergySaving'
 			} else if (res.type == 'questionnaireLogic') {
 				this.url = 'https://h5.jienengbao.top/questionnaire_edit/'+ res.id +'/h5?token=' + uni.getStorageSync('userinfo').access_token
+			} else if (res.type == 'banner') {
+				this.url = JSON.parse(decodeURIComponent(res.url))
 			}
 		}
 	}

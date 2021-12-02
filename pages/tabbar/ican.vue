@@ -22,7 +22,7 @@
 				<view class="function_centry_item flexColumn" @tap="goFunction('specialList')">
 					<image :src="$ossUrl('icon_energy_home_zhuanjia.png')" mode="" class="img"></image>
 					<view class="function_centry_item_title">
-						行业大咖
+						节能大咖
 					</view>
 				</view>
 				<view class="function_centry_item flexColumn" @tap="goActivityCenter">

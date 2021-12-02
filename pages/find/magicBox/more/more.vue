@@ -297,11 +297,11 @@
 				// }
 				this.$http.get('dms/app/product/shop_page', {
 					params: {
-						type: this.type,
-						tag: this.tag,
+						type: this.type, // 产品种类ID
+						tag: this.tag, // 类别名称
 						current: 1,
-						orderField: this.orderField,
-						orderType: this.orderType,
+						orderField: this.orderField, // 排列顺序
+						orderType: this.orderType, // 产品
 						size: 20
 					}
 				}).then(res => {

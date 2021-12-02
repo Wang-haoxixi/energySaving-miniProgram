@@ -21,8 +21,8 @@ const http = new Request()
 http.setConfig((config) => { /* 设置全局配置 */
 	// config.baseUrl = 'http://192.168.0.153:8888/' // 鹏
 	// config.baseUrl = 'http://192.168.0.250:8888/' //节能宝 本地测
-	// config.baseUrl = 'http://183.131.134.242:15986/api/' //节能宝 测
-	config.baseUrl = 'https://admin.jienengbao.top/api/' //节能宝 正式
+	config.baseUrl = 'http://183.131.134.242:15986/api/' //节能宝 测
+	// config.baseUrl = 'https://admin.jienengbao.top/api/' //节能宝 正式
 	//测试站
 	// config.baseUrl = 'http://www.modulestore.cn:64082/api/'
 	//正式站
