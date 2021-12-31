@@ -107,6 +107,7 @@
 			this.$http
 				.get('qms/conference_publish/activitie_home')
 				.then(res => {
+					console.log('data..',res)
 					this.data = res.data.data;
 				});
 		}

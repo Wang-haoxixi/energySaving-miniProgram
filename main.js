@@ -10,13 +10,13 @@ Vue.prototype.$http = http
 Vue.prototype.$oss = 'https://woneng-oss.oss-cn-hangzhou.aliyuncs.com/wxapp/EnergySaving/'
 Vue.prototype.$ossUrl = (suffix) => {
 	// return `https://woneng-oss.oss-cn-hangzhou.aliyuncs.com/wxapp/moduleStore/${suffix}`
-	return `https://woneng-oss.oss-cn-hangzhou.aliyuncs.com/wxapp/EnergySaving/${suffix}` // 节能保 图库
+	return `https://woneng-oss.oss-cn-hangzhou.aliyuncs.com/wxapp/EnergySaving/${suffix}` // 智慧节能宝 图库
 }
 //测试站
 // Vue.prototype.$http_url = 'http://www.modulestore.cn:64082/api/'
 
-// Vue.prototype.$http_url = 'http://183.131.134.242:15986/api/' // 节能保 测
-Vue.prototype.$http_url = 'https://admin.jienengbao.top/api' // 节能保 正
+// Vue.prototype.$http_url = 'http://183.131.134.242:15986/api/' // 智慧节能宝 测
+Vue.prototype.$http_url = 'https://admin.jienengbao.top/api' // 智慧节能宝 正
 
 //正式站
 // Vue.prototype.$http_url = 'https://www.modulestore.cn/api/'

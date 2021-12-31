@@ -1,5 +1,5 @@
 {
-    "name" : "节能保",
+    "name" : "智慧节能宝",
     "appid" : "__UNI__EA90645",
     "description" : "",
     "versionName" : "1.0.0",
@@ -57,7 +57,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxeac90ee044490625",
+        "appid" : "wx63e18d8bb5fd5bc5",
         "setting" : {
             "urlCheck" : false,
             "minified" : true,

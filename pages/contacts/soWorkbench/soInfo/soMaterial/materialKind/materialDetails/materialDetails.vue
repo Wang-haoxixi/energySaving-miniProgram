@@ -70,12 +70,12 @@
 						<!-- 文章 -->
 						<view class="" v-if="materialDetails.isOriginal==1">
 							<!-- 原创 -->
-							本文由<text>{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>发布于节能保，未经许可，禁止转载。
+							本文由<text>{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>发布于智慧节能宝，未经许可，禁止转载。
 						</view>
 						<view class="" v-else>
 							<!-- 转载 -->
 							<text class="color_2F80FF" @tap="goOriginal">原文</text>由<text>{{$isEmpty(materialDetails.createUser)?'':materialDetails.createUser}}</text>发布于<text>{{$isEmpty(materialDetails.platformSource)?'其他平台': materialDetails.platformSource}}</text>，
-							由<text>{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>转载至节能保，未经许可，禁止转载。如涉及作品内容、版权和其它问题，请在30日内与本平台联系，我们将在第一时间处理。
+							由<text>{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>转载至智慧节能宝，未经许可，禁止转载。如涉及作品内容、版权和其它问题，请在30日内与本平台联系，我们将在第一时间处理。
 						</view>
 					</view>
 					<view class="" v-else>
@@ -84,25 +84,25 @@
 							<!-- 原创 -->
 							<view class="" v-if="materialDetails.beenModifiedTwice==1">
 								<!-- 原本转载，经过了二次编辑 -->
-								<text class="color_2F80FF" @tap="goOriginal">原文</text>由<text>{{$isEmpty(materialDetails.oldCreateUploadName)?'':materialDetails.oldCreateUploadName}}</text>转载至节能保，由<text
+								<text class="color_2F80FF" @tap="goOriginal">原文</text>由<text>{{$isEmpty(materialDetails.oldCreateUploadName)?'':materialDetails.oldCreateUploadName}}</text>转载至智慧节能宝，由<text
 								 class="color_2F80FF" @tap="goCannerCard">{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>
 								二次创作后发布,未经许可，禁止转载。如涉及作品内容、版权和其它问题，请在30日内与本平台联系，我们将在第一时间处理。
 							</view>
 							<view class="" v-else-if="materialDetails.beenModifiedTwice==2">
 								<!-- 原本原创，经过了二次编辑 -->
-								<text class="color_2F80FF" @tap="goOriginal">原文</text>由<text>{{$isEmpty(materialDetails.oldCreateUploadName)?'':materialDetails.oldCreateUploadName}}</text>发布于节能保由<text
+								<text class="color_2F80FF" @tap="goOriginal">原文</text>由<text>{{$isEmpty(materialDetails.oldCreateUploadName)?'':materialDetails.oldCreateUploadName}}</text>发布于智慧节能宝由<text
 								 class="color_2F80FF" @tap="goCannerCard">{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>
 								二次创作后发布,未经许可，禁止转载。如涉及作品内容、版权和其它问题，请在30日内与本平台联系，我们将在第一时间处理。
 							</view>
 							<view class="" v-else>
 								<!-- 原创未二次编辑 -->
-								本文由<text class="color_2F80FF" @tap="goCannerCard">{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>发布于节能保，未经许可，禁止转载.
+								本文由<text class="color_2F80FF" @tap="goCannerCard">{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>发布于智慧节能宝，未经许可，禁止转载.
 							</view>
 						</view>
 						<view class="" v-else>
 							<!-- 转载 -->
 							<text class="color_2F80FF" @tap="goOriginal">原文</text>由<text>{{$isEmpty(materialDetails.createUser)?'':materialDetails.createUser}}</text>发布于<text>{{$isEmpty(materialDetails.platformSource)?'其他平台': materialDetails.platformSource}}</text>，
-							由<text class="color_2F80FF" @tap="goCannerCard">{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>转载至节能保，未经许可，禁止转载。如涉及作品内容、版权和其它问题，请在30日内与本平台联系，我们将在第一时间处理。
+							由<text class="color_2F80FF" @tap="goCannerCard">{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>转载至智慧节能宝，未经许可，禁止转载。如涉及作品内容、版权和其它问题，请在30日内与本平台联系，我们将在第一时间处理。
 						</view>
 					</view>
 				</view>

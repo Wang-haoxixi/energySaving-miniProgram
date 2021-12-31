@@ -58,22 +58,22 @@
 	image{
 		vertical-align: bottom;
 	}
-	// 节能保主体视觉色
+	// 智慧节能宝主体视觉色
 	.color_main_4fc975 {
 		color: #4fc975 !important;
 	}
 	
-	// 节能保按钮背景色-可点击
+	// 智慧节能宝按钮背景色-可点击
 	.bgColor_clickable {
 		background-color: #46B28B !important;
 	}
 	
-	// 节能保按钮背景色-不可点击
+	// 智慧节能宝按钮背景色-不可点击
 	.bgColor_unclickable {
 		background-color: #C7E8DC !important;
 	}
 	
-	// 节能保按钮背景色-透明
+	// 智慧节能宝按钮背景色-透明
 	.bgColor_lucency {
 		background-color: #ECEEF0 !important;
 	}

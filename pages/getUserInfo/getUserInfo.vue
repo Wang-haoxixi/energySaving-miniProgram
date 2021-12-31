@@ -16,7 +16,7 @@
 		</view>
 
 		<view class="color_919397 remind">
-			登录代表您已同意节能保
+			登录代表您已同意智慧节能宝
 			<text class="color_2F80FF" @tap="agreement">《用户协议》</text>
 			和
 			<text class="color_2F80FF" @tap="privacy">《隐私政策》</text>
@@ -90,7 +90,8 @@
 								params: {
 									encryptedData: encryptedData,
 									iv: iv,
-									wxMiniType: 'MINI',
+									// wxMiniType: 'MINI',
+									wxMiniType: 'JLBMINI',
 									code: code
 								},
 								header: {
