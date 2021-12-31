@@ -74,13 +74,14 @@ const getUserInfo = () => {
 const getPhoneNumber = (userInfo) => {
 	let that = this;
 	// #ifdef MP-WEIXIN
+	console.log(userInfo)
 	http
 		.post(
 			'admin/social/get_mini_mobile', {}, {
 				params: {
 					encryptedData: userInfo.detail.encryptedData,
 					iv: userInfo.detail.iv,
-					wxMiniType: 'MINI',
+					wxMiniType: 'JLBMINI',
 					code: getCode()
 				},
 				header: {
