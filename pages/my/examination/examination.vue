@@ -73,10 +73,10 @@
 										{{$isEmpty(item.orgName)?'':item.orgName}}
 									</view>
 								</view>
-								<view v-if="item.state==1" class="btn color_F74437">
+								<view v-if="item.state==1" class="btn color_main_4fc975">
 									继续答题
 								</view>
-								<view v-if="item.state==2 || item.state==3" class="btn color_F74437">
+								<view v-if="item.state==2 || item.state==3" class="btn color_main_4fc975">
 									查看试卷
 								</view>
 							</view>
@@ -85,7 +85,7 @@
 							</view>
 						</view>
 					</view>
-					<image class="emptyImg" v-if="!showList.length > 0 && oss" :src="oss+'pic_emptyExam.png'" mode="aspectFit"></image>
+					<image class="emptyImg" v-if="!showList.length > 0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 					<uni-load-more :status="examListStatus" v-if="showList.length>0"></uni-load-more>
 					<view class="bottom-safe" style="height: 112rpx;"></view>
 				</scroll-view>
@@ -444,7 +444,7 @@
 	}
 
 	.active {
-		color: #f74437;
+		color: #46B28B;
 		font-size: 32rpx;
 		font-weight: bold;
 		line-height: 44rpx;
@@ -463,7 +463,7 @@
 		width: 12rpx;
 		height: 6rpx;
 		border-radius: 3rpx;
-		background-color: #F74437;
+		background-color: #46B28B;
 	}
 
 	.soAvatarImg {
@@ -562,7 +562,7 @@
 					line-height: 50rpx;
 					text-align: center;
 					border-radius: 26rpx;
-					background: rgba(247, 68, 55, 0.1);
+					background: rgba(70, 178, 139, .1);
 				}
 			}
 

@@ -3,7 +3,7 @@
 		<uni-transition v-if="maskShow" :mode-class="['fade']" :styles="maskClass" :duration="duration" :show="showTrans"
 		 @click="onTap" />
 		<uni-transition :mode-class="ani" :styles="transClass" :duration="duration" :show="showTrans" @click="onTap">
-			<view class="uni-popup__wrapper-box" @click.stop="clear" :class="type=='bottom'?'btmClass':'centerClass'">
+			<view class="uni-popup__wrapper-box" @click.stop="clear" :style="status?'border-radius: 20rpx 20rpx 0 0;':''">
 				<slot />
 			</view>
 		</uni-transition>
@@ -112,9 +112,6 @@
 			} else {
 				this.duration = 0
 			}
-		},
-		onReady() {
-			// console.log(this.type)
 		},
 		methods: {
 			clear(e) {
@@ -269,7 +266,6 @@
 	}
 
 	.uni-popup__wrapper-box {
-		overflow: hidden;
 		/* #ifndef APP-NVUE */
 		display: block;
 		/* #endif */
@@ -277,17 +273,12 @@
 		/* iphonex 等安全区设置，底部安全区适配 */
 		/* #ifndef APP-NVUE */
 		background-color: white;
+		padding-bottom: constant(safe-area-inset-bottom);
+		padding-bottom: env(safe-area-inset-bottom);
 		
 		/* #endif */
 	}
-	.btmClass{
-		padding-bottom: constant(safe-area-inset-bottom);
-		padding-bottom: env(safe-area-inset-bottom);
-		border-radius:32rpx 32rpx 0 0  ;
-	}
-	.centerClass{
-		border-radius:32rpx;
-	}
+
 	.content-ani {
 		// transition: transform 0.3s;
 		transition-property: transform, opacity;

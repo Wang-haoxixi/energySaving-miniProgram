@@ -55,7 +55,7 @@
 					<image v-if="oss" :src="oss+'icon_soExamination_notFree.png'" mode=""></image>
 				</view>
 			</view>
-			<image class="emptyImg" v-if="!examList.records.length > 0 && oss" :src="oss+'pic_emptyExam.png'" mode="aspectFit"></image>
+			<image class="emptyImg" v-if="!examList.records.length > 0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 			<uni-load-more :status="examListStatus" v-if="examList.records.length > 0"></uni-load-more>
 		</view>
 	</view>

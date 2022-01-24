@@ -4,17 +4,17 @@
 			<view class="kindList" id="list">
 				<view class="flexRowStart kindListItem" :class="activeKind?'pickOn':'pickOff'" @tap="chooseKind">
 					<text>{{$isEmpty(examKind)?'':examKind}}</text>
-					<image class="pickImg" v-if="activeKind && oss" mode="aspectFill" :src="oss+'icon_soExamination_pickon.png'"></image>
+					<image class="pickImg" v-if="activeKind && oss" mode="aspectFill" :src="oss+'icon_triangle_gray.png'"></image>
 					<image class="pickImg" v-else-if="oss" :src="oss+'icon_triangle_gray.png'" style="width: 33rpx;height: 33rpx;"></image>
 				</view>
 				<view class="flexRowStart kindListItem" :class="activeSort?'pickOn':'pickOff'" @tap="chooseSort">
 					<text>{{$isEmpty(examSort)?'':examSort}}</text>
-					<image class="pickImg" v-if="activeSort && oss" mode="aspectFill" :src="oss+'icon_soExamination_pickon.png'"></image>
+					<image class="pickImg" v-if="activeSort && oss" mode="aspectFill" :src="oss+'icon_triangle_gray.png'"></image>
 					<image class="pickImg" v-else-if="oss" :src="oss+'icon_triangle_gray.png'" style="width: 33rpx;height: 33rpx;"></image>
 				</view>
 				<view class="flexRowStart kindListItem" :class="activeType?'pickOn':'pickOff'" @tap="chooseType">
 					<text>筛选</text>
-					<image class="pickImg" v-if="activeType && oss" mode="aspectFill" :src="oss+'icon_soExamination_pickon.png'"></image>
+					<image class="pickImg" v-if="activeType && oss" mode="aspectFill" :src="oss+'icon_triangle_gray.png'"></image>
 					<image class="pickImg" v-else-if="oss" :src="oss+'icon_triangle_gray.png'" style="width: 33rpx;height: 33rpx;"></image>
 				</view>
 			</view>
@@ -27,17 +27,17 @@
 					<view class="kindList" id="list" @tap="hide" style="margin: 0 40rpx;">
 						<view class="flexRowStart kindListItem" :class="activeKind?'pickOn':'pickOff'" @tap="hideChooseKind">
 							<text>{{$isEmpty(examKind)?'':examKind}}</text>
-							<image class="pickImg" v-if="activeKind && oss" mode="aspectFill" :src="oss+'icon_soExamination_pickon.png'"></image>
+							<image class="pickImg" v-if="activeKind && oss" mode="aspectFill" :src="oss+'icon_triangle_gray.png'"></image>
 							<image class="pickImg" v-else-if="oss" :src="oss+'icon_triangle_gray.png'" style="width: 33rpx;height: 33rpx;"></image>
 						</view>
 						<view class="flexRowStart kindListItem" :class="activeSort?'pickOn':'pickOff'" @tap="hideChooseSort">
 							<text>{{$isEmpty(examSort)?'':examSort}}</text>
-							<image class="pickImg" v-if="activeSort && oss" mode="aspectFill" :src="oss+'icon_soExamination_pickon.png'"></image>
+							<image class="pickImg" v-if="activeSort && oss" mode="aspectFill" :src="oss+'icon_triangle_gray.png'"></image>
 							<image class="pickImg" v-else-if="oss" :src="oss+'icon_triangle_gray.png'" style="width: 33rpx;height: 33rpx;"></image>
 						</view>
 						<view class="flexRowStart kindListItem" :class="activeType?'pickOn':'pickOff'" @tap="hideChooseType">
 							<text>筛选</text>
-							<image class="pickImg" v-if="activeType && oss" mode="aspectFill" :src="oss+'icon_soExamination_pickon.png'"></image>
+							<image class="pickImg" v-if="activeType && oss" mode="aspectFill" :src="oss+'icon_triangle_gray.png'"></image>
 							<image class="pickImg" v-else-if="oss" :src="oss+'icon_triangle_gray.png'" style="width: 33rpx;height: 33rpx;"></image>
 						</view>
 					</view>
@@ -117,17 +117,34 @@
 						{{$isEmpty(item.examName)?'':item.examName}}
 					</view>
 					<view class="flexRow examInfo color_919397">
-						<view class="time">
+						<view class="time flexRowStart">
 							<view class="">
+								考试时间:
+							</view>
+							<view class="" style="margin-left: 14rpx;">
 								{{$isEmpty(item.appShowTime)?'长期有效':item.appShowTime}}
 							</view>
 						</view>
-						<view class="member">
-							{{$isEmpty(item.testNumber)?'0':item.testNumber}}人已考
-						</view>
+						<!-- <view class="member flexRowStart">
+							<view class="">
+								时长:
+							</view>
+							<view class="" style="margin-left: 14rpx;">
+								{{$isEmpty(item.answerTime)?'':item.answerTime}}分钟
+							</view>
+						</view> -->
 					</view>
-					<view class="flexRow examOrg color_2F80FF" style="justify-content: flex-end;">
-						<view v-if="item.beginStatus==1" class="btn color_F74437" style="background: rgba(247, 68, 55, 0.1);">
+					<view class="flexRow examOrg color_2F80FF">
+						<view class="flexRowStart">
+							<image v-if="oss" class="memberImg" :src="oss+'icon_soExamination_joinMember.png'"></image>
+							<view class="" style="margin-right: 10rpx;">
+								参与人数:
+							</view>
+							<view class="">
+								{{$isEmpty(item.testNumber)?'0':item.testNumber}}
+							</view>
+						</view>
+						<view v-if="item.beginStatus==1" class="btn color_main_4fc975" style="background: rgba(70, 178, 139, .1);">
 							立即参加
 						</view>
 						<view v-if="item.beginStatus==2" class="btn color_919397" style="background-color: #E3E4E5;">
@@ -137,12 +154,12 @@
 							已参加
 						</view>
 					</view>
-					<view class="freeStatus" v-if="item.chargeStatus==2 || item.chargeStatus==3">
+					<view class="freeStatus" v-if="item.chargeStatus==2">
 						<image v-if="oss" :src="oss+'icon_soExamination_notFree.png'"></image>
 					</view>
 				</view>
 			</view>
-			<image class="noExamImg" v-if="!examList.records.length > 0 && oss" :src="oss+'pic_emptyExam.png'" mode="aspectFit"></image>
+			<image class="noExamImg" v-if="!examList.records.length > 0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 			<uni-load-more :status="examListStatus" v-if="examList.records.length>0"></uni-load-more>
 		</scroll-view>
 		<view class="bottom-safe" style="height: 112rpx;"></view>
@@ -246,7 +263,7 @@
 					type: this.firstAllStatus
 				}
 			}).then(res=>{
-				// console.log(res)
+				console.log('时长。。',res)
 				this.examList=res.data.data
 				if(!(this.examList.current<this.examList.pages)){
 					this.examListStatus='noMore'
@@ -572,20 +589,21 @@
 	::v-deep.resetBtn{
 		margin-right: 30rpx;
 		flex: 1;
-		padding: 22rpx 128rpx;
-		background: #F5f7f8;
-		color: #565B5F;
+		// padding: 20rpx 126rpx;
+		background-color: #FFFFFF;
+		border: 2rpx solid #46B28B;
+		color: #46B28B;
 	}
 	::v-deep.confirmBtn{
 		flex: 1;
-		padding: 22rpx 128rpx;
+		// padding: 22rpx 128rpx;
 	}
 .title{
 	position: sticky;
 	top: 0rpx;
 	z-index: 9;
 	background-color: #FFFFFF;
-	padding: 0 32rpx;
+	padding: 0 40rpx;
 	padding-bottom: 20rpx;
 }
 .sortAction{
@@ -631,7 +649,7 @@
 }
 .pickOn{
 	font-weight: bold;
-	color: #F74437;
+	color: #46B28B;
 }
 .pickOff{
 	font-weight: normal;
@@ -643,8 +661,8 @@
 }
 .pickChooseOn{
 	font-weight: bold;
-	color: #F74437;
-	background:rgba(247, 68, 55, 0.1)
+	color: #46B28B;
+	background: rgba(70, 178, 139, .1);
 }
 .pickChooseOff{
 	font-weight: normal;
@@ -655,9 +673,9 @@
 	width: 100%;
 }
 .search{
-	padding: 18rpx 32rpx;
-	border-radius: 60rpx;
-	background-color: #F5f7f8;
+	padding: 20rpx 32rpx;
+	border-radius: 20rpx;
+	background-color: #F4F5F6;
 	.searchImg{
 		height: 32rpx;
 		width: 32rpx;

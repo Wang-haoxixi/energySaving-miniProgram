@@ -34,7 +34,7 @@
 					</view>
 				</view>
 				<view class="flexRow examOrg color_2F80FF" style="justify-content: flex-end;">
-					<view v-if="item.beginStatus==1" class="btn color_F74437" style="background: rgba(247, 68, 55, 0.1);">
+					<view v-if="item.beginStatus==1" class="btn color_main_4fc975" style="background: rgba(70, 178, 139, .1);">
 						立即参加
 					</view>
 					<view v-if="item.beginStatus==2" class="btn color_919397" style="background-color: #E3E4E5;">
@@ -48,7 +48,7 @@
 					<image v-if="oss" :src="oss+'icon_soExamination_notFree.png'" mode=""></image>
 				</view>
 			</view>
-			<image class="emptyImg" v-if="!examList.records.length > 0 && oss" :src="oss+'pic_emptyExam.png'" mode="aspectFit"></image>
+			<image class="emptyImg" v-if="!examList.records.length > 0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 			<uni-load-more :status="examListStatus"></uni-load-more>
 		</view>
 	</view>

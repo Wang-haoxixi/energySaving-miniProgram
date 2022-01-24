@@ -826,7 +826,8 @@
 					}else{
 						item.status =true
 					}
-				} else if (this.questionType == '复选题') {
+				// } else if (this.questionType == '复选题') {
+				} else if (this.questionType == '多选题') {
 					// console.log(item2.status)
 					let userAnswer =[]
 					if(item_item.status ==false){

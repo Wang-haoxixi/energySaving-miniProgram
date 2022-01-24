@@ -683,14 +683,14 @@
 				font-size: 36rpx;
 				line-height: 50rpx;
 				font-weight: bold;
-				color: #F74437;
+				color: #46B28B;
 			}
 
 			.titleLine {
 				width: 12rpx;
 				height: 6rpx;
 				border-radius: 3rpx;
-				background-color: #F74437;
+				background-color: #46B28B;
 			}
 		}
 	}

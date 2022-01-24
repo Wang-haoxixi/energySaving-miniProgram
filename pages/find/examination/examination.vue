@@ -144,7 +144,7 @@
 					</view>
 				</view>
 			</view>
-			<image class="noExamImg" v-if="!examList.records.length > 0 && oss" :src="oss+'pic_emptyExam.png'" mode="aspectFit"></image>
+			<image class="noExamImg" v-if="!examList.records.length > 0 && oss" :src="oss+'pic_energy_default_wuxinxi.png'" mode="aspectFit"></image>
 			<uni-load-more :status="examListStatus" v-if="examList.records.length > 0"></uni-load-more>
 		</scroll-view>
 		<view class="bottom-safe" style="height: 112rpx;"></view>
@@ -224,7 +224,6 @@
 					source: '2'
 				}
 			}).then(res => {
-				// console.log(res)
 				if(!this.$isEmpty(res.data.data.level) &&res.data.data.level.length>0){
 					this.hardLevel = res.data.data.level.map(item=>{
 						return {
@@ -498,7 +497,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.soAvatarImg{
 		width: 48rpx;
 		height: 48rpx;

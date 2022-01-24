@@ -653,14 +653,18 @@
 
 	::v-deep button {
 		background-color: #FFFFFF;
-		color: #F74437;
+		color: #46B28B;
 		border-radius: 20rpx;
-		border: 2rpx solid #F74437;
+		border: 2rpx solid #46B28B;
 		margin-right: 30rpx;
 		padding: 14rpx 73rpx;
 		font-size: 28rpx;
 		line-height: 40rpx;
 		font-weight: bold;
+		&.button-hover{
+			background-color: rgba(70, 178, 139, .1);
+			color: rgba(70, 178, 139, 1);
+		}
 	}
 
 	.container {

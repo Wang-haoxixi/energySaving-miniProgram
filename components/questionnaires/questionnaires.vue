@@ -124,7 +124,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .taskList {
 			padding: 32rpx 32rpx 24rpx; 
 			background-color: #FFFFFF;

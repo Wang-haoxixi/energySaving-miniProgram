@@ -915,7 +915,7 @@
 
 <style lang="scss">
 	.active {
-		color: #f74437;
+		color: #46B28B;
 		font-size: 32rpx;
 		font-weight: bold;
 		line-height: 44rpx;
@@ -933,7 +933,7 @@
 		width: 12rpx;
 		height: 6rpx;
 		border-radius: 3rpx;
-		background-color: #F74437;
+		background-color: #46B28B;
 	}
 	.icon{
 		width: 72rpx;

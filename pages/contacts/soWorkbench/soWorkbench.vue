@@ -153,6 +153,7 @@
 		},
 		onShow() {
 			this.$http.get(`admin/app/org/workplace/v2/${this.id}`).then(res => {
+				console.log('workplace..', res)
 				this.soInfo = res.data.data;
 				this.org = res.data.data.org;
 				// console.log(this.org.avatar)

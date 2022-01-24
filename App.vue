@@ -349,8 +349,8 @@
 
 	/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
 	radio .wx-radio-input.wx-radio-input-checked {
-		border: 2rpx solid #FF6034;
-		background: #FF6034;
+		border: 2rpx solid #46B28B;
+		background: #46B28B;
 	}
 
 	/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */

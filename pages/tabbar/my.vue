@@ -116,12 +116,12 @@
 						收藏
 					</view>
 				</view>
-				<!-- <view class="item" @tap="navigateTo('examination')">					
+				<view class="item" @tap="navigateTo('examination')">					
 					<image v-if="oss" class="item-icon" :src="oss + 'icon_my_exam.png'"> </image>
 					<view class="item-text">
 						考试
 					</view>
-				</view> -->
+				</view>
 				<!-- <view class="item" @tap="navigateTo('recruit')">
 					<image v-if="oss" class="item-icon" :src="oss + 'icon_my_recruit.png'"> </image>
 					<view class="item-text">

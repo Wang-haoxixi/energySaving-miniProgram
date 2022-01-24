@@ -45,13 +45,18 @@
 								<view class="scrollX_item" id="labelD" :class="[{ item_active: SOActive }, { item_unactive: !SOActive }]" @tap="SO">
 									活动
 								</view>
-								<view class="scrollX_item" id="labelE" :class="[{ item_active: quesActive }, { item_unactive: !quesActive }]" @tap="quse">
+								
+								<view class="scrollX_item" id="labelE" :class="[{ item_active: exam }, { item_unactive: !exam }]" @tap="examTap">
+									考试
+								</view>
+								
+								<view class="scrollX_item" id="labelF" :class="[{ item_active: quesActive }, { item_unactive: !quesActive }]" @tap="quse">
 									问卷
 								</view>
-								<view class="scrollX_item" id="labelF" :class="[{ item_active: projectActive }, { item_unactive: !projectActive }]" @tap="project">
+								<view class="scrollX_item" id="labelG" :class="[{ item_active: projectActive }, { item_unactive: !projectActive }]" @tap="project">
 									组织
 								</view>
-								<view class="scrollX_item" id="labelG" :class="[{ item_active: rednessActive }, { item_unactive: !rednessActive }]" @tap="redness">
+								<view class="scrollX_item" id="labelH" :class="[{ item_active: rednessActive }, { item_unactive: !rednessActive }]" @tap="redness">
 									达人
 								</view>
 							</scroll-view>
@@ -137,15 +142,20 @@
 						</swiper-item>
 						<swiper-item item_recommend_id="4">
 							<view class="" style="background-color: #f5f7f8;padding: 0 24rpx;">
-								<questionnaires :qusetionnaireInfo="qusetionnaireInfo" :scrollHeight="scrollHeight"></questionnaires>
+								<examination :examData='examData' :scrollHeight="scrollHeight"></examination>
 							</view>
 						</swiper-item>
 						<swiper-item item_recommend_id="5">
+							<view class="" style="background-color: #f5f7f8;padding: 0 24rpx;">
+								<questionnaires :qusetionnaireInfo="qusetionnaireInfo" :scrollHeight="scrollHeight"></questionnaires>
+							</view>
+						</swiper-item>
+						<swiper-item item_recommend_id="6">
 							<view class="" style="background-color: #f5f7f8;">
 								<recommondSo :soInfo="soInfo" :scrollHeight="scrollHeight" @recommondSocommentsOpen="commentsOpen"></recommondSo>
 							</view>
 						</swiper-item>
-						<swiper-item item_recommend_id="6" @touchstart="recommendStart" @touchend="recommendEnd">
+						<swiper-item item_recommend_id="7" @touchstart="recommendStart" @touchend="recommendEnd">
 							<view class="" style="background-color: #f5f7f8;">
 								<rednessList :celebrityInfo="celebrityInfo" :scrollHeight="scrollHeight" @attentionRedness="attentionCanner"
 								 @cannerRedness="goCannerCard"></rednessList>
@@ -297,6 +307,7 @@
 				articleActive: true,
 				activityActive: false,
 				SOActive: false,
+				exam: false,
 				quesActive:false,
 				projectActive: false,
 				celebrityActive: true,
@@ -366,7 +377,10 @@
 				remindMore:'more',
 				friendListStatus:false,
 				soListStatus:false,
-				showRefreshStatus:true
+				showRefreshStatus:true,
+				
+				url: '',
+				examData: {},
 			};
 		},
 		async onLoad() {
@@ -469,8 +483,29 @@
 					this.acticityInfo = {}
 				}
 			})
+			
+			this.saveToken = this.$isEmpty(uni.getStorageSync('token'));
+			if (this.saveToken) {
+				this.url = 'qms/exam_examination/visitor_app_page';
+			} else {
+				this.url = 'qms/exam_examination/app_page';
+			}
+			this.$http.get(this.url, {
+				params: {
+					source: '2',
+					// sort: this.sortNum,
+					// testStatus: this.testStatus,
+					// chargeStatus: this.chargeStatus,
+					// level: this.level,
+					// type: this.firstAllStatus
+				}
+			}).then(res=>{
+				this.examData = res.data.data
+				console.log('examData111..', this.examData)
+			})
+			
 			this.$http.get('qms/questionnaire/factory_page').then(res => {
-				// console.log(res)
+				console.log('factory_page..',res)
 				this.qusetionnaireInfo = res.data.data
 				this.qusetionnaireInfo.records.forEach(item => {
 					if (item.startTime && item.endTime) {
@@ -1436,11 +1471,13 @@
 					this.activity();
 				} else if (e.detail.current == 3) {
 					this.SO();
-				}else if(e.detail.current == 4){
+				} else if(e.detail.current == 4){
+					this.examTap()
+				} else if(e.detail.current == 5){
 					this.quse();
-				} else if (e.detail.current == 5) {
-					this.project();
 				} else if (e.detail.current == 6) {
+					this.project();
+				} else if (e.detail.current == 7) {
 					this.redness()
 				}
 				//将要点击的label距左侧距离
@@ -1517,6 +1554,7 @@
 					this.projectActive = false,
 					this.rednessActive=false,
 					this.quesActive=false,
+					this.exam = false,
 					this.item_recommend_id = 0
 			},
 			article() {
@@ -1527,6 +1565,7 @@
 					this.projectActive = false,
 					this.rednessActive=false,
 					this.quesActive=false,
+					this.exam = false,
 					this.item_recommend_id = 1
 			},
 			activity() {
@@ -1537,6 +1576,7 @@
 					this.projectActive = false,
 					this.rednessActive=false,
 					this.quesActive=false,
+					this.exam = false,
 					this.item_recommend_id = 2
 			},
 			SO() {
@@ -1547,7 +1587,19 @@
 					this.projectActive = false,
 					this.rednessActive=false,
 					this.quesActive=false,
+					this.exam = false,
 					this.item_recommend_id = 3
+			},
+			examTap(){
+				this.allActive = false,
+					this.articleActive = false,
+					this.activityActive = false,
+					this.SOActive = false,
+					this.quesActive=false,
+					this.exam = true,
+					this.projectActive = false,
+					this.rednessActive=false
+					this.item_recommend_id = 4
 			},
 			quse(){
 				this.allActive = false,
@@ -1555,9 +1607,10 @@
 					this.activityActive = false,
 					this.SOActive = false,
 					this.quesActive=true,
+					this.exam = false,
 					this.projectActive = false,
 					this.rednessActive=false
-					this.item_recommend_id = 4
+					this.item_recommend_id = 5
 			},
 			project() {
 				this.allActive = false,
@@ -1567,7 +1620,8 @@
 					this.rednessActive=false
 					this.projectActive = true,
 					this.quesActive=false,
-					this.item_recommend_id = 5
+					this.exam = false,
+					this.item_recommend_id = 6
 			},
 			redness() {
 				this.allActive = false,
@@ -1577,7 +1631,8 @@
 					this.projectActive = false,
 					this.rednessActive=true,
 					this.quesActive=false,
-					this.item_recommend_id = 6
+					this.exam = false,
+					this.item_recommend_id = 7
 			},
 			goCannerCard(item) {
 				uni.navigateTo({
