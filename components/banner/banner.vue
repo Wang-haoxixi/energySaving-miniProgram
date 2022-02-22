@@ -1,5 +1,5 @@
 <template>
-	<view class="banner-cantainer">
+	<view class="banner-cantainer" v-if="data.length>0">
 		<uni-swiper-dot :info="data" :current="current" mode="round" :dotsStyles="dotsStyles">
 			<swiper class="swiper" autoplay circular @change="change">
 				<swiper-item class="content-item" v-for="(item ,index) in data" :key="index" @tap="go(item)">

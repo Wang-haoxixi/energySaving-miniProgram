@@ -16,7 +16,7 @@
 							<image :src="$ossUrl('icon_energy_articledetails_zhiding.png')" mode="" class="mark"></image>
 						</view>
 						<view style="margin-right: 10rpx;">作者:</view>
-						<view class="color_516B8D" style="margin-right: 10rpx;flex: 1;">{{$isEmpty(materialDetails.createUser)?'':materialDetails.createUser}}</view>
+						<view class="color_516B8D singleEllipsis" style="margin-right: 10rpx;flex: 1;">{{$isEmpty(materialDetails.createUser)?'':materialDetails.createUser}}</view>
 						<view style="">{{$isEmpty(materialDetails.createTime)?'':materialDetails.createTime}}</view>
 					</view>
 				</view>
@@ -70,12 +70,14 @@
 						<!-- 文章 -->
 						<view class="" v-if="materialDetails.isOriginal==1">
 							<!-- 原创 -->
-							本文由<text>{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>发布于智慧节能宝，未经许可，禁止转载。
+							<!-- 本文由<text>{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>发布于智慧节能宝，未经许可，禁止转载。 -->
+							特别声明：智慧节能宝平台原创，转载需获授权。
 						</view>
 						<view class="" v-else>
 							<!-- 转载 -->
-							<text class="color_2F80FF" @tap="goOriginal">原文</text>由<text>{{$isEmpty(materialDetails.createUser)?'':materialDetails.createUser}}</text>发布于<text>{{$isEmpty(materialDetails.platformSource)?'其他平台': materialDetails.platformSource}}</text>，
-							由<text>{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>转载至智慧节能宝，未经许可，禁止转载。如涉及作品内容、版权和其它问题，请在30日内与本平台联系，我们将在第一时间处理。
+							<!-- <text class="color_2F80FF" @tap="goOriginal">原文</text>由<text>{{$isEmpty(materialDetails.createUser)?'':materialDetails.createUser}}</text>发布于<text>{{$isEmpty(materialDetails.platformSource)?'其他平台': materialDetails.platformSource}}</text>，
+							由<text>{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>转载至智慧节能宝，未经许可，禁止转载。如涉及作品内容、版权和其它问题，请在30日内与本平台联系，我们将在第一时间处理。 -->
+							特别声明：节能宝平台转载其他网站内容，出于传递更多信息而非盈利之目的，同时并不代表赞成其观点或证实其描述，内容仅供参考。版权归原作者所有，若有侵权，请联系我们删除。
 						</view>
 					</view>
 					<view class="" v-else>
@@ -96,13 +98,15 @@
 							</view>
 							<view class="" v-else>
 								<!-- 原创未二次编辑 -->
-								本文由<text class="color_2F80FF" @tap="goCannerCard">{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>发布于智慧节能宝，未经许可，禁止转载.
+								<!-- 本文由<text class="color_2F80FF" @tap="goCannerCard">{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>发布于智慧节能宝，未经许可，禁止转载. -->
+								特别声明：智慧节能宝平台原创，转载需获授权。
 							</view>
 						</view>
 						<view class="" v-else>
 							<!-- 转载 -->
-							<text class="color_2F80FF" @tap="goOriginal">原文</text>由<text>{{$isEmpty(materialDetails.createUser)?'':materialDetails.createUser}}</text>发布于<text>{{$isEmpty(materialDetails.platformSource)?'其他平台': materialDetails.platformSource}}</text>，
-							由<text class="color_2F80FF" @tap="goCannerCard">{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>转载至智慧节能宝，未经许可，禁止转载。如涉及作品内容、版权和其它问题，请在30日内与本平台联系，我们将在第一时间处理。
+							<!-- <text class="color_2F80FF" @tap="goOriginal">原文</text>由<text>{{$isEmpty(materialDetails.createUser)?'':materialDetails.createUser}}</text>发布于<text>{{$isEmpty(materialDetails.platformSource)?'其他平台': materialDetails.platformSource}}</text>，
+							由<text class="color_2F80FF" @tap="goCannerCard">{{$isEmpty(materialDetails.realName)?'':materialDetails.realName}}</text>转载至智慧节能宝，未经许可，禁止转载。如涉及作品内容、版权和其它问题，请在30日内与本平台联系，我们将在第一时间处理。 -->
+							特别声明：节能宝平台转载其他网站内容，出于传递更多信息而非盈利之目的，同时并不代表赞成其观点或证实其描述，内容仅供参考。版权归原作者所有，若有侵权，请联系我们删除。
 						</view>
 					</view>
 				</view>
@@ -690,7 +694,7 @@
 
 			.remarkInfo {
 				font-size: 20rpx;
-				line-height: 34rpx;
+				margin-bottom: 40rpx;
 			}
 
 			.disclaimer {
